@@ -112,6 +112,17 @@ module.exports = function (grunt) {
       }
     }
     ,
+    browserify: {
+      'source/js/parser/src/parser.js': [
+        'source/js/parser/src/parser-node.js'
+      ],
+      options: {
+        browserifyOptions: {
+          standalone: 'vparse'
+        }
+      }
+    }
+    ,
     watch: {
       files: [
         '<config:concat.app.src>'
@@ -126,10 +137,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-browserify');
 
   // production, run when grunt is run with no arguments
-  grunt.registerTask('default', ['jshint', 'cssmin', 'uglify', 'copy']);
+  grunt.registerTask('default', ['jshint', 'cssmin', 'browserify', 'uglify', 'copy']);
   // development - dont minify js
-  grunt.registerTask('dev', ['cssmin', 'copy', 'jshint']);
+  grunt.registerTask('dev', ['jshint', 'cssmin','browserify','concat', 'copy']);
 };
