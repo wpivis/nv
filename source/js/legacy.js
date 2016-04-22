@@ -118,11 +118,12 @@ function updateEventList(){
   var nbeItems1 = "",
       nbeItems2 = "";
 
-  nbeItems1 = parseNBEFile( nbeText1 );
+  nbeItems1 = vparse.parseNBEFile( nbeText1 );
   eventList = nbeItems1;
+  console.log( nbeItems1 );
   if(nbeText2.trim() !== ""){
     NV.nessus.set('isChangeVis', true);
-    nbeItems2 = parseNBEFile( nbeText2 );
+    nbeItems2 = vparse.parseNBEFile( nbeText2 );
     eventList = mergeNBEs(nbeItems1, nbeItems2);
   }
 }
