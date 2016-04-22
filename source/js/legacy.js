@@ -4,27 +4,27 @@ var nbeText2 = "";
 var groupList = [];
 
 function sizeBySeverity() {
-   NV.treemap.set('sizeOption', 'cvss'); 
+   NV.treemap.set('sizeOption', 'cvss');
 }
 
 function sizeByCriticality() {
-   NV.treemap.set('sizeOption', 'criticality'); 
+   NV.treemap.set('sizeOption', 'criticality');
 }
 
 function sizeByCount() {
-   NV.treemap.set('sizeOption', 'value'); 
+   NV.treemap.set('sizeOption', 'value');
 }
 
 function colorBySeverity() {
-   NV.treemap.set('colorOption', 'cvss'); 
+   NV.treemap.set('colorOption', 'cvss');
 }
 
 function colorByCriticality() {
-   NV.treemap.set('colorOption', 'criticality'); 
+   NV.treemap.set('colorOption', 'criticality');
 }
 
 function colorByCount() {
-   NV.treemap.set('colorOption', 'count'); 
+   NV.treemap.set('colorOption', 'count');
 }
 
 // Sets the main Backbone data model
@@ -58,7 +58,7 @@ function handleGroupAdd(){
 function clearData() {
   eventList = {};
   groupList = [];
-  
+
   $('#file-list').html('');
   $('#file-reset-btn').addClass('disabled');
   $('#file-continue-btn').addClass('disabled');
@@ -77,14 +77,14 @@ function dataTabActive() {
 function dataLoaded(fileName) {
   $('#groupsTabNav').removeClass('disabled');
   $('#visTabNav').removeClass('disabled');
-  
+
   $('#file-status').css('display', 'block');
   $('#file-status').addClass('alert-success');
   $('#file-status-msg').html('<i class="icon-file"></i> <strong>' + fileName + '</strong> loaded in browser.');
-  
+
   $('#file-list').append(' <i class="icon-file"></i> ' + fileName);
 
-  $('#file-reset-btn').removeClass('disabled');  
+  $('#file-reset-btn').removeClass('disabled');
   $('#file-continue-btn').removeClass('disabled');
 }
 
@@ -93,7 +93,7 @@ function groupsTabActive(){
     updateEventList();
   }
   updateCurrentGroupTable();
-  
+
   $('#visTabNav').removeClass('disabled');
   $('#groups-continue-btn').removeClass('disabled');
 }
@@ -140,7 +140,7 @@ function updateCurrentGroupTable(){
   //console.log("have these IPs: " + JSON.stringify(ips));
 
   //add to the default group.
-  //NOTE we are building this list of groups:ips, instead of the two seperate lists we already have, so that all machines in a group are next to each other in the table. 
+  //NOTE we are building this list of groups:ips, instead of the two seperate lists we already have, so that all machines in a group are next to each other in the table.
   groups = {};
   for( var i=0; i < ips.length; i++ ){
     var groupName = findGroupName(ips[i]);
@@ -316,28 +316,28 @@ function buildTable(groups){
 
 //rather loosely based on these examples http://www.html5rocks.com/en/tutorials/file/dndfiles/
 var handleFileSelect = function (element) {
-  
+
   var holder = document.getElementById(element);
-  
+
   if (typeof window.FileReader === 'undefined') {
     $('#file-status').css('display', 'block');
     $('#file-status').addClass('alert-error');
     console.log('FileReader not supported');
-  } 
+  }
   else {
     console.log('FileReader supported');
   }
- 
-  holder.ondragover = function () { 
-    this.className = 'hover'; 
-    return false; 
+
+  holder.ondragover = function () {
+    this.className = 'hover';
+    return false;
   };
-  
-  holder.ondragend = function () { 
-    this.className = ''; 
-    return false; 
+
+  holder.ondragend = function () {
+    this.className = '';
+    return false;
   };
-  
+
   holder.ondrop = function (e) {
     this.className = '';
     e.preventDefault();
@@ -346,15 +346,15 @@ var handleFileSelect = function (element) {
         f = files[0];
 
     holder.loadFile(f);
-                      
+
     return false;
-  }; 
+  };
 
   holder.loadFile = function(f) {
     console.log('called loadFile');
 
     var reader = new FileReader();
-                      
+
     reader.readAsText(f); //utf-8 encoding is default
 
     reader.onload = function (event) {
@@ -379,17 +379,17 @@ var handleFileSelect = function (element) {
 
     return false;
   };
-  
+
 };
 
 
 // load a sample data file
 $( '#sampleDataLink' ).click(function() {
-  var file = 'data/testNetworkOpen.nbe';
+  var file = 'data/test.nessus';
   $.get(file, function (data) {
     nbeText1 = data;
     dataLoaded('Sample file: ' + file);
-  });  
+  });
 });
 
 
@@ -406,10 +406,10 @@ $().ready(function () {
   $('#helpIcon').tipsy({trigger: 'manual', fade: true, gravity: 'e'});
 
   $('#helpIcon').on('mouseover', function(){
-    $('.help').tipsy('show'); 
+    $('.help').tipsy('show');
   });
   $('#helpIcon').on('mouseout', function(){
-    $('.help').tipsy('hide'); 
+    $('.help').tipsy('hide');
   });
 
 
@@ -420,7 +420,7 @@ $().ready(function () {
   $('#file-reset-btn').click(function(event) {
     window.location.reload();
     //clearData();
-  });  
+  });
 
   // data tab events
   $('#dataTab1Link').click(function(event) {
@@ -433,7 +433,7 @@ $().ready(function () {
     $('#groupsTabLink').tab('show');
     groupsTabActive();
   });
-  
+
   $('#groupsTabLink').click(function(event) {
     event.preventDefault();
     groupsTabActive();
@@ -443,21 +443,21 @@ $().ready(function () {
   $('#addGroupBtn').click(function(event) {
     handleGroupAdd();
   });
- 
+
   // vis tab events
   $('#visTabLink').on('show', function(){
     setTimeout(function() {
       visTabActive();
-    }, 100); 
+    }, 100);
   });
 
   $('#groups-continue-btn').click(function(event) {
     $('#visTabLink').tab('show');
   });
-  
+
   // auto-triggers the 'show' event
   $('#visTabLink').click(function(event) {
     event.preventDefault();
-  });  
+  });
 
 });

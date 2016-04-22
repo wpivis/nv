@@ -1,4 +1,7 @@
 //var sys = require("util")
+// var fs = require('fs');
+// var xml2js = require('xml2js');
+// var XmlDocument = require('xmldoc').XmlDocument;
 
 /**
  * Parses a nessus result line and handles missing fields.
@@ -6,33 +9,13 @@
  * @return - structure containing th eip, vulnid, vulntype, cvss and port
  */
 var parseNessusResult = function(nessStr){
-    var scoreReg = /CVSS Base Score : (\d+\.\d+)/;
-
-    var portReg = /\D+ \((\d{1,7})\D+\)/;
-    var splitNess = nessStr.split("|");
-    var ip = splitNess[2];
-    var code = parseFloat(splitNess[4]);
-    var holeNote = splitNess[5];
-    if(scoreReg.test(nessStr)){
-        var score = parseFloat(scoreReg.exec(nessStr)[1]);
-    }
-    else{
-        var score = 1.0;
-    }
-    if(portReg.test(nessStr)){
-        var port = parseFloat(portReg.exec(nessStr)[1]);
-    }
-    else{
-        var port = 'notes';
-    }
-    
-
-    return {"ip": (ip === undefined ? "" : ip),
-        "vulnid": (isNaN(code) ? 0 : code),
-        "vulntype":(holeNote === undefined ? "" : holeNote.indexOf('Note') !== -1 ? 'note' : 'hole'),
-        "cvss": score,
-        "value": 1,
-        "port":port};
+  return {"ip":"0.0.0.0.0",
+  "vulnid": 0,
+  "vulntype": "hole",
+  "cvss":items[i].childNamed('cvss_base_score') != null ?
+    items[i].childNamed('cvss_base_score').val : ' ',
+  "value": 1,
+  "port":items[i].attr.port};
 }
 
 /**
@@ -43,7 +26,7 @@ var parseNessusTimeStamp = function(stampString){
     var moment = require("moment")
     var timeFormat = "ddd MMM DD HH:mm:ss YYYY"
     var splitInput = stampString.split("|")
-    
+
     var time = moment(splitInput[splitInput.length - 2], timeFormat)
     //var time = splitInput[splitInput.length - 2]
     return time.valueOf()
@@ -67,9 +50,34 @@ var isResult = function(line){
 }
 
 /**
- * @param nbe - a string representing the contents of a NBE file.
+ * @param nbe - a string represen ting the contents of a NBE file.
  * @return - array where each entry is a result from the NBE file.
  */
+var parseNBEFile = function(nbe){
+    //var fs = require('fs');
+    //var xml2js = require('xml2js');
+    //var XmlDocument = require('xmldoc').XmlDocument;
+    // var lines = nbe.split("\n")
+    var currentTime = 0
+    var returnArray = new Array(2)
+    var parser = xml2js.Parser()
+
+    parser.parseString(nbe, function (err, result) {
+      var xmlDoc = new XmlDocument(nbe);
+      var report = xmlDoc.childNamed("Report");
+      var hosts = report.childrenNamed('ReportHost');
+
+      for (var j = 0; j<hosts.length; j++) {
+        var items = hosts[j].childrenNamed('ReportItem');
+        for (var i = 0; i<items.length; i++) {
+          returnArray.push(parseNessusResult(items[i]));
+        }
+      }
+    });
+  return returnArray;
+}
+
+/*
 var parseNBEFile = function(nbe){
     var lines = nbe.split("\n")
     var currentTime = 0
@@ -82,6 +90,7 @@ var parseNBEFile = function(nbe){
     }
     return returnArray.filter(function(){return true});//removes nulls
 }
+*/
 
 //module.exports.parseNessusResult = parseNessusResult;
 //module.exports.parseNessusTimeStamp = parseNessusTimeStamp;

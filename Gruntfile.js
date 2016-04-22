@@ -20,6 +20,8 @@ module.exports = function (grunt) {
         'source/js/nv/*.js'
       , 'source/js/nv/models/*.js'
       , 'source/js/nv/views/*.js'
+      , 'source/js/parser/parser.js'
+      , 'source/js/legacy.js'
       ],
       options: {
         browser: true,
@@ -108,10 +110,10 @@ module.exports = function (grunt) {
           {src: ['source/data/*'], dest: 'public/data/', expand: true}
         ]
       }
-    }    
+    }
     ,
-    watch: { 
-      files: [ 
+    watch: {
+      files: [
         '<config:concat.app.src>'
       , 'source/index.html'
       , 'source/css/nv.css'
@@ -129,5 +131,5 @@ module.exports = function (grunt) {
   // production, run when grunt is run with no arguments
   grunt.registerTask('default', ['jshint', 'cssmin', 'uglify', 'copy']);
   // development - dont minify js
-  grunt.registerTask('dev', 'lint cssmin concat copy');
+  grunt.registerTask('dev', ['cssmin', 'copy', 'jshint']);
 };
