@@ -18052,13 +18052,13 @@ var XmlDocument = require('xmldoc').XmlDocument;
  * @return - structure containing th eip, vulnid, vulntype, cvss and port
  */
 var parseNessusResult = function(nessStr, name){
-  id = nessStr.attr.severity;
+  //id = nessStr.attr.severity;
   var scoreCode = ['Open Port', 'Low', 'Warning', 'High', 'Hole'];
 
   return {
   "ip": name,
-  "vulnid": id,
-  "vulntype": scoreCode[id],
+  "vulnid": nessStr.attr.pluginID,
+  "vulntype": scoreCode[nessStr.attr.severity],
   "cvss": nessStr.childNamed('cvss_base_score') != null ?
     nessStr.childNamed('cvss_base_score').val : '',
   "value": 1,
@@ -18127,25 +18127,6 @@ var parseNBEFile = function(nbe){
 module.exports = {
   parseNBEFile: parseNBEFile
 }
-
-/*
-var parseNBEFile = function(nbe){
-    var lines = nbe.split("\n")
-    var currentTime = 0
-    var returnArray = new Array(2)
-
-    for(var i = 0; i < lines.length; i++){
-        if(isResult(lines[i])){
-            returnArray.push(parseNessusResult(lines[i]))
-        }
-    }
-    return returnArray.filter(function(){return true});//removes nulls
-}
-*/
-
-//module.exports.parseNessusResult = parseNessusResult;
-//module.exports.parseNessusTimeStamp = parseNessusTimeStamp;
-//module.exports.parseNBEFile = parseNBEFile;
 
 },{"moment":27,"xml2js":30,"xmldoc":163}]},{},[166])(166)
 });

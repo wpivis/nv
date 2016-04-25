@@ -10,13 +10,13 @@ var XmlDocument = require('xmldoc').XmlDocument;
  * @return - structure containing th eip, vulnid, vulntype, cvss and port
  */
 var parseNessusResult = function(nessStr, name){
-  id = nessStr.attr.severity;
+  //id = nessStr.attr.severity;
   var scoreCode = ['Open Port', 'Low', 'Warning', 'High', 'Hole'];
 
   return {
   "ip": name,
-  "vulnid": id,
-  "vulntype": scoreCode[id],
+  "vulnid": nessStr.attr.pluginID,
+  "vulntype": scoreCode[nessStr.attr.severity],
   "cvss": nessStr.childNamed('cvss_base_score') != null ?
     nessStr.childNamed('cvss_base_score').val : '',
   "value": 1,
