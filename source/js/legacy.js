@@ -229,6 +229,7 @@ function mergeNBEs(nbeItems1, nbeItems2){
 
 function findIPsInList(eventList){
   var ips = {}; //making a fake set here.
+  console.log(eventList[0]);
   for( var i=0; i < eventList.length; i++ ){
     ips[eventList[i].ip] = true;
   }

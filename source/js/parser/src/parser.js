@@ -18051,15 +18051,18 @@ var XmlDocument = require('xmldoc').XmlDocument;
  * @param nessStr - nbe result string line
  * @return - structure containing th eip, vulnid, vulntype, cvss and port
  */
-var parseNessusResult = function(nessStr){
+var parseNessusResult = function(nessStr, name){
+  id = nessStr.attr.severity;
+  var scoreCode = ['Open Port', 'Low', 'Warning', 'High', 'Hole'];
+
   return {
-  "ip":"0.0.0.0.0",
-  "vulnid": 0,
-  "vulntype": "hole",
-  "cvss":nessStr.childNamed('cvss_base_score') != null ?
-    nessStr.childNamed('cvss_base_score').val : ' ',
+  "ip": name,
+  "vulnid": id,
+  "vulntype": scoreCode[id],
+  "cvss": nessStr.childNamed('cvss_base_score') != null ?
+    nessStr.childNamed('cvss_base_score').val : '',
   "value": 1,
-  "port":nessStr.attr.port};
+  "port": nessStr.attr.port};
 }
 
 /**
@@ -18072,7 +18075,7 @@ var parseNessusTimeStamp = function(stampString){
     var splitInput = stampString.split("|")
 
     var time = moment(splitInput[splitInput.length - 2], timeFormat)
-    //var time = splitInput[splitInput.length - 2]
+    var time = splitInput[splitInput.length - 2]
     return time.valueOf()
 }
 
@@ -18114,11 +18117,11 @@ var parseNBEFile = function(nbe){
       for (var j = 0; j<hosts.length; j++) {
         var items = hosts[j].childrenNamed('ReportItem');
         for (var i = 0; i<items.length; i++) {
-          returnArray.push(parseNessusResult(items[i]));
+          returnArray.push(parseNessusResult(items[i], hosts[j].attr.name));
         }
       }
     });
-  return returnArray;
+  return returnArray.filter(function(){return true});  //remove nulls
 }
 
 module.exports = {
