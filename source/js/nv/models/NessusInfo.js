@@ -25,6 +25,7 @@ var NessusInfo = Backbone.Model.extend({
   },
 
   updateData: function(vulnid){
+<<<<<<< HEAD
     console.log(this.get('vulnIdInfo')[40888] + "tried");
     console.log(this.get('vulnIdInfo')['40888'] + "tried2");
     console.log(this.get('vulnIdInfo')[vulnid].vulnid);
@@ -32,5 +33,16 @@ var NessusInfo = Backbone.Model.extend({
     // add vulnid to data
     vulnInfo.vulnid = vulnid;
     this.set('data', vulnInfo);
+=======
+
+    if( vulnid in this.get('vulnIdInfo') ) {
+      var vulnInfo = this.get('vulnIdInfo')[vulnid];
+      vulnInfo.vulnid = vulnid;
+      this.set('data', vulnInfo);
+    } else {
+      console.log('vulnerability missing: ' + vulnid);
+    }
+
+>>>>>>> 162d8a2cd2db6531a301179ae04340a6ad6ebbf4
   }
 });
