@@ -24,13 +24,33 @@ var NessusInfo = Backbone.Model.extend({
   },
 
   updateData: function(vulnid){
+    var vulnInfo = {};
 
     if( vulnid in this.get('vulnIdInfo') ) {
-      var vulnInfo = this.get('vulnIdInfo')[vulnid];
+      vulnInfo = this.get('vulnIdInfo')[vulnid];
       vulnInfo.vulnid = vulnid;
       this.set('data', vulnInfo);
     } else {
-      console.log('vulnerability missing: ' + vulnid);
+      console.log('vulnerability missing but watch: ' + vulnid);
+      vulnInfo = {
+        "bugtraqList": [
+          "<a href='http://securityfocus.com/bid/'></a>"
+        ], 
+        "cveList": [
+          "<a href='http://cgi.nessus.org/cve.php3?cve='></a>"
+        ], 
+        "description": "This vulnerability is currently missing from NV's database. ", 
+        "family": "unknown", 
+        "otherInfoList": [
+          "Risk factor : unknown"
+        ], 
+        "solution": "", 
+        "synopsis": "<a target='_blank' href='http://www.tenable.com/plugins/index.php?view=single&id="+vulnid+"'>Vulnerability details on Tenable</a>.", 
+        "title": "Missing: see below for external links", 
+        "updateInfo": ""
+      };
+      vulnInfo.vulnid = vulnid;
+      this.set('data', vulnInfo);
     }
 
   }
