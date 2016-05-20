@@ -18040,8 +18040,6 @@ else
 
 }).call(this,require("buffer").Buffer)
 },{"buffer":2,"stream":24,"string_decoder":25}],166:[function(require,module,exports){
-// var sys = require("util")
-// var fs = require('fs');
 var moment = require('moment');
 var xml2js = require('xml2js');
 var XmlDocument = require('xmldoc').XmlDocument;
@@ -18070,9 +18068,9 @@ var parseNessusResult = function(nessStr, name){
  * @return - milliseconds between epoch and the time in the stamp.
  */
 var parseNessusTimeStamp = function(stampString){
-    var moment = require("moment")
-    var timeFormat = "ddd MMM DD HH:mm:ss YYYY"
-    var splitInput = stampString.split("|")
+    var moment = require("moment");
+    var timeFormat = "ddd MMM DD HH:mm:ss YYYY";
+    var splitInput = stampString.split("|");
 
     var time = moment(splitInput[splitInput.length - 2], timeFormat)
     var time = splitInput[splitInput.length - 2]
@@ -18101,11 +18099,6 @@ var isResult = function(line){
  * @return - array where each entry is a result from the NBE file.
  */
 var parseNBEFile = function(nbe){
-    //var fs = require('fs');
-    //var xml2js = require('xml2js');
-    //var XmlDocument = require('xmldoc').XmlDocument;
-    // var lines = nbe.split("\n")
-    var currentTime = 0
     var returnArray = new Array(2)
     var parser = xml2js.Parser()
 

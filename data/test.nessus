@@ -2742,7 +2742,7 @@ Following application CPE&apos;s matched on the remote system :
   cpe:/a:microsoft:ie:6.0.2900.5512
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51587" pluginName="MS KB2488013: Internet Explorer CSS Import Rule Processing Arbitrary Code Execution" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="51587" pluginName="MS KB2488013: Internet Explorer CSS Import Rule Processing Arbitrary Code Execution" pluginFamily="Windows">
 <bid>45246</bid>
 <canvas_package>CANVAS</canvas_package>
 <cert>634956</cert>
@@ -2791,7 +2791,7 @@ information :
  - Microsoft Enhanced Mitigation Experience Toolkit (EMET) is not installed.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="38689" pluginName="Microsoft Windows SMB Last Logged On User Disclosure" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="38689" pluginName="Microsoft Windows SMB Last Logged On User Disclosure" pluginFamily="Windows">
 <description>By connecting to the remote host with the supplied credentials, this plugin identifies the username associated with the last successful logon.</description>
 <fname>smb_last_loggedon_user.nasl</fname>
 <plugin_modification_date>2011/03/04</plugin_modification_date>
@@ -2806,7 +2806,7 @@ information :
 Last Successful logon : Administrator
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="43089" pluginName="MS KB955759: Security Enhancements for the Indeo Codec" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="43089" pluginName="MS KB955759: Security Enhancements for the Indeo Codec" pluginFamily="Windows">
 <bid>37251</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-4210</cve>
@@ -2868,7 +2868,7 @@ C:\WINDOWS\system32\ir50_qcx.dll
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="48405" pluginName="MS10-054: Vulnerabilities in SMB Server Could Allow Remote Code Execution (982214) (remote check)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="4" pluginID="48405" pluginName="MS10-054: Vulnerabilities in SMB Server Could Allow Remote Code Execution (982214) (remote check)" pluginFamily="Windows">
 <bid>42224</bid>
 <bid>42263</bid>
 <bid>42267</bid>
@@ -2908,7 +2908,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-054</solution>
 <xref>EDB-ID:14607</xref>
 <xref>MSFT:MS10-054</xref>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="53503" pluginName="MS11-020: Vulnerability in SMB Server Could Allow Remote Code Execution (2508429) (remote check)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="4" pluginID="53503" pluginName="MS11-020: Vulnerability in SMB Server Could Allow Remote Code Execution (2508429) (remote check)" pluginFamily="Windows">
 <bid>47198</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0661</cve>
@@ -2939,7 +2939,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-020</solution>
 <xref>IAVA:2011-A-0050</xref>
 <xref>MSFT:MS11-020</xref>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="47556" pluginName="MS10-012: Vulnerabilities in SMB Could Allow Remote Code Execution (971468) (uncredentialed check)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="4" pluginID="47556" pluginName="MS10-012: Vulnerabilities in SMB Could Allow Remote Code Execution (971468) (uncredentialed check)" pluginFamily="Windows">
 <bid>38049</bid>
 <bid>38051</bid>
 <bid>38054</bid>
@@ -3073,7 +3073,7 @@ UID&apos; and/or &apos;End UID&apos; preferences for &apos;SMB use host SID to e
 local users&apos; setting, and then re-run the scan.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="10396" pluginName="Microsoft Windows SMB Shares Access" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="10396" pluginName="Microsoft Windows SMB Shares Access" pluginFamily="Windows">
 <description>The remote has one or more Windows shares that can be accessed through the network with the given credentials.
 
 Depending on the share rights, it may allow an attacker to read / write confidential data.</description>
@@ -3154,7 +3154,7 @@ $NtUninstallKB914440$
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="10860" pluginName="SMB Use Host SID to Enumerate Local Users" pluginFamily="Windows : User management">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="10860" pluginName="SMB Use Host SID to Enumerate Local Users" pluginFamily="Windows : User management">
 <description>Using the host security identifier (SID), it is possible to enumerate local users on the remote Windows system.</description>
 <fname>smb_sid2localuser.nasl</fname>
 <plugin_modification_date>2012/08/10</plugin_modification_date>
@@ -3180,7 +3180,7 @@ UID&apos; and/or &apos;End UID&apos; preferences for this plugin, then re-run th
 scan.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="10859" pluginName="Microsoft Windows SMB LsaQueryInformationPolicy Function SID Enumeration" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="10859" pluginName="Microsoft Windows SMB LsaQueryInformationPolicy Function SID Enumeration" pluginFamily="Windows">
 <description>By emulating the call to LsaQueryInformationPolicy(), it was possible to obtain the host SID (Security Identifier).
 
 The host SID can then be used to get the list of local users.</description>
@@ -3204,7 +3204,7 @@ The remote host SID value is :
 The value of &apos;RestrictAnonymous&apos; setting is : 0
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="48942" pluginName="Microsoft Windows SMB Registry : OS Version and Processor Architecture" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="48942" pluginName="Microsoft Windows SMB Registry : OS Version and Processor Architecture" pluginFamily="Windows">
 <description>By using the supplied credentials, it is possible to connect to the remote registry and determine the processor architecture and the Windows OS version installed on the remote system.</description>
 <fname>smb_registry_os_and_arch.nasl</fname>
 <plugin_modification_date>2011/03/21</plugin_modification_date>
@@ -3219,7 +3219,7 @@ Operating System Version = 5.1.2600
 Architecture = x86
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56452" pluginName="MS11-078: Vulnerability in .NET Framework and Microsoft Silverlight Could Allow Remote Code Execution (2604930)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="56452" pluginName="MS11-078: Vulnerability in .NET Framework and Microsoft Silverlight Could Allow Remote Code Execution (2604930)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>49999</bid>
 <cpe>cpe:/a:microsoft:.net_framework
 cpe:/a:microsoft:silverlight
@@ -3255,7 +3255,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-078</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59042" pluginName="MS12-034: Combined Security Update for Microsoft Office, Windows, .NET Framework, and Silverlight (2681578)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="59042" pluginName="MS12-034: Combined Security Update for Microsoft Office, Windows, .NET Framework, and Silverlight (2681578)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>50462</bid>
 <bid>53324</bid>
 <bid>53326</bid>
@@ -3361,7 +3361,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-034</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55119" pluginName="MS11-039: Vulnerability in .NET Framework and Microsoft Silverlight Could Allow Remote Code Execution (2514842)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="55119" pluginName="MS11-039: Vulnerability in .NET Framework and Microsoft Silverlight Could Allow Remote Code Execution (2514842)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48212</bid>
 <cpe>cpe:/a:microsoft:silverlight</cpe>
 <cve>CVE-2011-0664</cve>
@@ -3395,7 +3395,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-039</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="34414" pluginName="MS KB956391: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="34414" pluginName="MS KB956391: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>5.1</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:H/Au:N/C:P/I:P/A:P</cvss_vector>
@@ -3422,7 +3422,7 @@ that have not been set because &apos;Thorough tests&apos; was not enabled
 when this scan was run.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="59916" pluginName="MS KB2728973: Unauthorized Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="59916" pluginName="MS KB2728973: Unauthorized Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>5.8</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:M/Au:N/C:P/I:P/A:N</cvss_vector>
@@ -3450,7 +3450,7 @@ SOFTWARE\Microsoft\SystemCertificates\Disallowed\Certificates\E95DD86F32C771F034
 This indicates the update has not been applied.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="56955" pluginName="MS KB2641690: Fraudulent Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="56955" pluginName="MS KB2641690: Fraudulent Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>5.8</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:M/Au:N/C:P/I:P/A:N</cvss_vector>
@@ -3474,7 +3474,7 @@ http://support.microsoft.com/kb/2641690</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="20811" pluginName="Microsoft Windows Installed Software Enumeration (credentialed check)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="20811" pluginName="Microsoft Windows Installed Software Enumeration (credentialed check)" pluginFamily="Windows">
 <description>This plugin lists software potentially installed on the remote host by crawling the registry entries in :
 
   HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
@@ -3530,7 +3530,7 @@ Windows XP Service Pack 3  [version 20080414.031525]
 XML Paper Specification Shared Components Pack 1.0  [version 1.0]
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="35634" pluginName="MS KB960715: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="35634" pluginName="MS KB960715: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
 <bid>33663</bid>
 <canvas_package>D2ExploitPack</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -3591,7 +3591,7 @@ that have not been set because &apos;Thorough tests&apos; was not enabled
 when this scan was run.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="51352" pluginName="Microsoft .NET Framework Service Pack Out of Date" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="4" pluginID="51352" pluginName="Microsoft .NET Framework Service Pack Out of Date" pluginFamily="Windows">
 <cpe>cpe:/a:microsoft:.net_framework</cpe>
 <cvss_base_score>10.0</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:L/Au:N/C:C/I:C/A:C</cvss_vector>
@@ -3618,7 +3618,7 @@ service pack installed :
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="51351" pluginName="Microsoft .NET Framework Detection" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="51351" pluginName="Microsoft .NET Framework Detection" pluginFamily="Windows">
 <cpe>cpe:/a:microsoft:.net_framework</cpe>
 <description>Microsoft .NET Framework, a software framework for Microsoft Windows operating systems is installed on the remote host.</description>
 <fname>microsoft_net_framework_installed.nasl</fname>
@@ -3648,7 +3648,7 @@ installed :
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="50614" pluginName="Adobe Reader &lt; 9.4.1 Multiple Vulnerabilities (APSB10-28)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="50614" pluginName="Adobe Reader &lt; 9.4.1 Multiple Vulnerabilities (APSB10-28)" pluginFamily="Windows">
 <bid>44504</bid>
 <bid>44638</bid>
 <bid>44838</bid>
@@ -3757,7 +3757,7 @@ remote host :
   Fixed version     : 9.4.1
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="56213" pluginName="Adobe Reader Unsupported Version Detection" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="4" pluginID="56213" pluginName="Adobe Reader Unsupported Version Detection" pluginFamily="Windows">
 <cpe>cpe:/a:adobe:reader</cpe>
 <cvss_base_score>10.0</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:L/Au:N/C:C/I:C/A:C</cvss_vector>
@@ -3779,7 +3779,7 @@ remote host :
   Supported versions  : 10.x / 9.x
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48375" pluginName="Adobe Reader &lt; 9.3.4 / 8.2.4  Multiple Vulnerabilities (APSB10-17)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="48375" pluginName="Adobe Reader &lt; 9.3.4 / 8.2.4  Multiple Vulnerabilities (APSB10-17)" pluginFamily="Windows">
 <bid>39109</bid>
 <bid>40798</bid>
 <bid>42203</bid>
@@ -3856,7 +3856,7 @@ remote host :
   Fixed version     : 9.3.4 / 8.2.4
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="47165" pluginName="Adobe Reader &lt; 9.3.3 / 8.2.3  Multiple Vulnerabilities (APSB10-15)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="47165" pluginName="Adobe Reader &lt; 9.3.3 / 8.2.3  Multiple Vulnerabilities (APSB10-15)" pluginFamily="Windows">
 <bid>39109</bid>
 <bid>40586</bid>
 <bid>41230</bid>
@@ -3987,7 +3987,7 @@ remote host :
   Fixed version     : 9.3.3 / 8.2.3
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="44644" pluginName="Adobe Reader &lt; 9.3.1 / 8.2.1  Multiple Vulnerabilities (APSB10-07)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="44644" pluginName="Adobe Reader &lt; 9.3.1 / 8.2.1  Multiple Vulnerabilities (APSB10-07)" pluginFamily="Windows">
 <bid>38195</bid>
 <bid>38198</bid>
 <canvas_package>CANVAS</canvas_package>
@@ -4038,7 +4038,7 @@ remote host :
   - 8.2.0.81, under C:\Program Files\Adobe\Reader 8.0\Reader
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55144" pluginName="Adobe Reader &lt; 10.1 / 9.4.5 / 8.3 Multiple Vulnerabilities (APSB11-16)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="55144" pluginName="Adobe Reader &lt; 10.1 / 9.4.5 / 8.3 Multiple Vulnerabilities (APSB11-16)" pluginFamily="Windows">
 <bid>48240</bid>
 <bid>48242</bid>
 <bid>48243</bid>
@@ -4134,7 +4134,7 @@ remote host :
   Fixed version     : 8.3 / 9.4.5 / 10.1
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="45505" pluginName="Adobe Reader &lt; 9.3.2 / 8.2.2  Multiple Vulnerabilities (APSB10-09)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="45505" pluginName="Adobe Reader &lt; 9.3.2 / 8.2.2  Multiple Vulnerabilities (APSB10-09)" pluginFamily="Windows">
 <bid>39227</bid>
 <bid>39417</bid>
 <bid>39469</bid>
@@ -4252,7 +4252,7 @@ remote host :
   - 8.2.0.81, under C:\Program Files\Adobe\Reader 8.0\Reader
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56198" pluginName="Adobe Reader &lt; 10.1.1 / 9.4.6 / 8.3.1 Multiple Vulnerabilities (APSB11-21, APSB11-24)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="56198" pluginName="Adobe Reader &lt; 10.1.1 / 9.4.6 / 8.3.1 Multiple Vulnerabilities (APSB11-21, APSB11-24)" pluginFamily="Windows">
 <bid>49073</bid>
 <bid>49074</bid>
 <bid>49075</bid>
@@ -4428,7 +4428,7 @@ remote host :
   Fixed version     : 8.3.1 / 9.4.6 / 10.1.1
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49173" pluginName="Adobe Reader &lt; 9.4 / 8.2.5 Multiple Vulnerabilities (APSB10-21)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="49173" pluginName="Adobe Reader &lt; 9.4 / 8.2.5 Multiple Vulnerabilities (APSB10-21)" pluginFamily="Windows">
 <bid>43057</bid>
 <bid>43205</bid>
 <bid>43722</bid>
@@ -4549,7 +4549,7 @@ remote host :
   Fixed version     : 9.4 / 8.2.5
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51925" pluginName="Adobe Reader &lt; 10.0.1 / 9.4.2 / 8.2.6 Multiple Vulnerabilities (APSB11-03)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="51925" pluginName="Adobe Reader &lt; 10.0.1 / 9.4.2 / 8.2.6 Multiple Vulnerabilities (APSB11-03)" pluginFamily="Windows">
 <bid>44638</bid>
 <bid>46186</bid>
 <bid>46187</bid>
@@ -4768,7 +4768,7 @@ remote host :
   Fixed version     : 8.2.6 / 9.4.2 / 10.0.1
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="20836" pluginName="Adobe Reader Detection" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="20836" pluginName="Adobe Reader Detection" pluginFamily="Windows">
 <cpe>cpe:/a:adobe:reader</cpe>
 <description>Adobe Reader, a PDF file viewer, is installed on the remote host.</description>
 <fname>adobe_reader_installed.nasl</fname>
@@ -4787,7 +4787,7 @@ Path    : C:\Program Files\Adobe\Reader 8.0\Reader
 Version : 8.2.0.81
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="39350" pluginName="MS KB969898: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="39350" pluginName="MS KB969898: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
 <bid>33918</bid>
 <bid>35218</bid>
 <bid>35247</bid>
@@ -4831,7 +4831,7 @@ that have not been set because &apos;Thorough tests&apos; was not enabled
 when this scan was run.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48762" pluginName="MS KB2269637: Insecure Library Loading Could Allow Remote Code Execution" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="48762" pluginName="MS KB2269637: Insecure Library Loading Could Allow Remote Code Execution" pluginFamily="Windows">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>9.3</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:M/Au:N/C:C/I:C/A:C</cvss_vector>
@@ -4865,7 +4865,7 @@ These protections could be applied in a way that breaks functionality in existin
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="56124" pluginName="MS KB2616676: Fraudulent Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="56124" pluginName="MS KB2616676: Fraudulent Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>5.8</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:M/Au:N/C:P/I:P/A:N</cvss_vector>
@@ -4889,7 +4889,7 @@ http://support.microsoft.com/kb/2616676</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="58452" pluginName="Microsoft Windows Startup Software Enumeration" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="58452" pluginName="Microsoft Windows Startup Software Enumeration" pluginFamily="Windows">
 <description>This plugin lists software that is configured to run on system startup by crawling the registry entries in :
 
   - HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
@@ -4912,7 +4912,7 @@ The following startup items were found :
   VMware User Process - C:\Program Files\VMware\VMware Tools\VMwareUser.exe
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="55802" pluginName="MS 2562937: Update Rollup for ActiveX Kill Bits (2562937)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="55802" pluginName="MS 2562937: Update Rollup for ActiveX Kill Bits (2562937)" pluginFamily="Windows">
 <bid>46930</bid>
 <bid>47643</bid>
 <bid>47695</bid>
@@ -4963,7 +4963,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="35730" pluginName="Microsoft Windows USB Device Usage Report" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="35730" pluginName="Microsoft Windows USB Device Usage Report" pluginFamily="Windows">
 <description>By connecting to the remote host with the supplied credentials, this plugin enumerates USB devices that have been connected to the remote host in the past.</description>
 <fname>smb_enum_historic_usb_device_usage.nasl</fname>
 <plugin_modification_date>2011/03/04</plugin_modification_date>
@@ -5007,7 +5007,7 @@ First used : unknown
 this test with the option &apos;thorough_tests&apos; enabled)
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="58335" pluginName="MS 2647518: Update Rollup for ActiveX Kill Bits (2647518)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="58335" pluginName="MS 2647518: Update Rollup for ActiveX Kill Bits (2647518)" pluginFamily="Windows">
 <bid>51448</bid>
 <bid>51184</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -5054,7 +5054,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="59357" pluginName="MS KB2718704: Unauthorized Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="59357" pluginName="MS KB2718704: Unauthorized Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
 <bid>53760</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>5.8</cvss_base_score>
@@ -5087,7 +5087,7 @@ SOFTWARE\Microsoft\SystemCertificates\Disallowed\Certificates\FA6660A94AB45F6A88
 This indicates the update has not been applied.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="33881" pluginName="MS KB953839: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="33881" pluginName="MS KB953839: Cumulative Security Update of ActiveX Kill Bits" pluginFamily="Windows">
 <bid>27539</bid>
 <bid>29531</bid>
 <bid>29532</bid>
@@ -5130,7 +5130,7 @@ that have not been set because &apos;Thorough tests&apos; was not enabled
 when this scan was run.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="11429" pluginName="Microsoft Windows Messenger Detection" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="11429" pluginName="Microsoft Windows Messenger Detection" pluginFamily="Windows">
 <description>Windows Messenger, an instant messaging client, is installed on the remote Windows host.</description>
 <fname>winmessenger_installed.nasl</fname>
 <plugin_modification_date>2011/03/04</plugin_modification_date>
@@ -5141,7 +5141,7 @@ when this scan was run.
 <solution>Ensure that use of this softare agrees with your organization&apos;s acceptable use and security policies.</solution>
 <synopsis>The remote host contains an instant messaging client.</synopsis>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="52673" pluginName="Flash Player &lt; 10.2.153.1 Unspecified Memory Corruption (APSB11-05)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="52673" pluginName="Flash Player &lt; 10.2.153.1 Unspecified Memory Corruption (APSB11-05)" pluginFamily="Windows">
 <bid>46860</bid>
 <cert>192052</cert>
 <cpe>cpe:/a:adobe:flash_player</cpe>
@@ -5189,7 +5189,7 @@ http://www.adobe.com/support/security/bulletins/apsb11-05.html</see_also>
   Fixed version     : 10.2.153.1
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58538" pluginName="Flash Player &lt;= 10.3.183.16 / 11.1.102.63 Multiple Memory Corruption Vulnerabilities (APSB12-07)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="58538" pluginName="Flash Player &lt;= 10.3.183.16 / 11.1.102.63 Multiple Memory Corruption Vulnerabilities (APSB12-07)" pluginFamily="Windows">
 <bid>52748</bid>
 <bid>52914</bid>
 <bid>52916</bid>
@@ -5237,7 +5237,7 @@ http://www.adobe.com/support/security/bulletins/apsb12-07.html</see_also>
   Fixed version     : 11.2.202.228 / 10.3.183.18
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56259" pluginName="Flash Player &lt;= 10.3.183.7 Multiple Vulnerabilities (APSB11-26)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="56259" pluginName="Flash Player &lt;= 10.3.183.7 Multiple Vulnerabilities (APSB11-26)" pluginFamily="Windows">
 <bid>49710</bid>
 <bid>49714</bid>
 <bid>49715</bid>
@@ -5299,7 +5299,7 @@ http://www.adobe.com/support/security/bulletins/apsb11-26.html</see_also>
   Fixed version     : 10.3.183.10
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="54972" pluginName="Flash Player &lt; 10.3.181.22 Cross-Site Scripting (APSB11-13)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="54972" pluginName="Flash Player &lt; 10.3.181.22 Cross-Site Scripting (APSB11-13)" pluginFamily="Windows">
 <bid>48107</bid>
 <cpe>cpe:/a:adobe:flash_player</cpe>
 <cve>CVE-2011-2107</cve>
@@ -5334,7 +5334,7 @@ An attacker may be able to leverage this issue to inject and execute arbitrary H
   Fixed version     : 10.3.181.23
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53472" pluginName="Flash Player &lt; 10.2.159.1 ActionScript Predefined Class Prototype Addition Remote Code Execution (APSB11-07)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="53472" pluginName="Flash Player &lt; 10.2.159.1 ActionScript Predefined Class Prototype Addition Remote Code Execution (APSB11-07)" pluginFamily="Windows">
 <bid>47314</bid>
 <cert>230057</cert>
 <cpe>cpe:/a:adobe:flash_player</cpe>
@@ -5377,7 +5377,7 @@ http://www.adobe.com/support/security/bulletins/apsb11-07.html</see_also>
   Fixed version     : 10.2.159.1
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="61622" pluginName="Flash Player &lt;= 10.3.183.22 / 11.4.402.264 Multiple Vulnerabilities (APSB12-19)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="61622" pluginName="Flash Player &lt;= 10.3.183.22 / 11.4.402.264 Multiple Vulnerabilities (APSB12-19)" pluginFamily="Windows">
 <bid>55136</bid>
 <bid>55365</bid>
 <cpe>cpe:/a:adobe:flash_player</cpe>
@@ -5438,7 +5438,7 @@ http://www.adobe.com/support/security/bulletins/apsb12-19.html</see_also>
   Fixed version     : 10.3.183.23 / 11.4.402.265
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56874" pluginName="Flash Player &lt;= 10.3.183.10 / 11.0.1.152 Multiple Vulnerabilities (APSB11-28)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="56874" pluginName="Flash Player &lt;= 10.3.183.10 / 11.0.1.152 Multiple Vulnerabilities (APSB11-28)" pluginFamily="Windows">
 <bid>50618</bid>
 <bid>50619</bid>
 <bid>50620</bid>
@@ -5523,7 +5523,7 @@ http://www.adobe.com/support/security/bulletins/apsb12-19.html</see_also>
   Fixed version     : 10.3.183.11 / 11.1.102.55
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58994" pluginName="Flash Player &lt;= 10.3.183.18 / 11.2.202.233 Object Confusion Vulnerability (APSB12-09)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="58994" pluginName="Flash Player &lt;= 10.3.183.18 / 11.2.202.233 Object Confusion Vulnerability (APSB12-09)" pluginFamily="Windows">
 <bid>53395</bid>
 <cpe>cpe:/a:adobe:flash_player</cpe>
 <cve>CVE-2012-0779</cve>
@@ -5560,7 +5560,7 @@ http://www.nessus.org/u?ba4bc112</see_also>
   Fixed version     : 10.3.183.19 / 11.2.202.235
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58001" pluginName="Flash Player &lt;= 10.3.183.14 / 11.1.102.55 Multiple Vulnerabilities (APSB12-03)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="58001" pluginName="Flash Player &lt;= 10.3.183.14 / 11.1.102.55 Multiple Vulnerabilities (APSB12-03)" pluginFamily="Windows">
 <bid>52032</bid>
 <bid>52033</bid>
 <bid>52034</bid>
@@ -5632,7 +5632,7 @@ http://www.adobe.com/support/security/bulletins/apsb12-03.html</see_also>
   Fixed version     : 10.3.183.15 / 11.1.102.62
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58207" pluginName="Flash Player &lt;= 10.3.183.15 / 11.1.102.62 Multiple Vulnerabilities (APSB12-05)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="58207" pluginName="Flash Player &lt;= 10.3.183.15 / 11.1.102.62 Multiple Vulnerabilities (APSB12-05)" pluginFamily="Windows">
 <bid>52297</bid>
 <bid>52299</bid>
 <cpe>cpe:/a:adobe:flash_player</cpe>
@@ -5671,7 +5671,7 @@ http://www.adobe.com/support/security/bulletins/apsb12-03.html</see_also>
   Fixed version     : 10.3.183.16 / 11.1.102.63
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59426" pluginName="Flash Player &lt;= 10.3.183.19 / 11.3.300.256 Multiple Vulnerabilities (APSB12-14)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="59426" pluginName="Flash Player &lt;= 10.3.183.19 / 11.3.300.256 Multiple Vulnerabilities (APSB12-14)" pluginFamily="Windows">
 <bid>53887</bid>
 <cpe>cpe:/a:adobe:flash_player</cpe>
 <cve>CVE-2012-2034</cve>
@@ -5733,7 +5733,7 @@ http://www.adobe.com/support/security/bulletins/apsb12-03.html</see_also>
   Fixed version     : 10.3.183.20 / 11.3.300.257
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55803" pluginName="Flash Player &lt;= 10.3.181.36 Multiple Vulnerabilities (APSB11-21)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="55803" pluginName="Flash Player &lt;= 10.3.181.36 Multiple Vulnerabilities (APSB11-21)" pluginFamily="Windows">
 <bid>49073</bid>
 <bid>49074</bid>
 <bid>49075</bid>
@@ -5834,7 +5834,7 @@ http://www.adobe.com/support/security/bulletins/apsb11-21.html</see_also>
   Fixed version     : 10.3.183.5
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59196" pluginName="Flash Player Unsupported Version Detection" pluginFamily="Windows">
+<ReportItem port="193" svc_name="cifs" protocol="tcp" severity="3" pluginID="59196" pluginName="Flash Player Unsupported Version Detection" pluginFamily="Windows">
 <cpe>cpe:/a:adobe:flash_player</cpe>
 <cvss_base_score>9.3</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:M/Au:N/C:C/I:C/A:C</cvss_vector>
@@ -5855,7 +5855,7 @@ http://kb2.adobe.com/cps/406/kb406791.html</see_also>
   Installed version : 10.2.152.26
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="54299" pluginName="Flash Player &lt; 10.3.181.14 Multiple Vulnerabilities (APSB11-12)" pluginFamily="Windows">
+<ReportItem port="193" svc_name="cifs" protocol="tcp" severity="3" pluginID="54299" pluginName="Flash Player &lt; 10.3.181.14 Multiple Vulnerabilities (APSB11-12)" pluginFamily="Windows">
 <bid>47806</bid>
 <bid>47807</bid>
 <bid>47808</bid>
@@ -5946,7 +5946,7 @@ http://www.adobe.com/support/security/bulletins/apsb11-12.html</see_also>
   Fixed version     : 10.3.181.14
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55140" pluginName="Flash Player &lt; 10.3.181.26 Multiple Vulnerabilities (APSB11-18)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="55140" pluginName="Flash Player &lt; 10.3.181.26 Multiple Vulnerabilities (APSB11-18)" pluginFamily="Windows">
 <bid>48268</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/a:adobe:flash_player</cpe>
@@ -5986,7 +5986,7 @@ This issue is reportedly being exploited in the wild in targeted attacks as of J
   Fixed version     : 10.3.181.26
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="28211" pluginName="Flash Player Detection" pluginFamily="Windows">
+<ReportItem port="195" svc_name="cifs" protocol="tcp" severity="0" pluginID="28211" pluginName="Flash Player Detection" pluginFamily="Windows">
 <cpe>cpe:/a:adobe:flash_player</cpe>
 <description>There is at least one instance of Adobe Flash Player installed on the remote Windows host.</description>
 <fname>flash_player_installed.nasl</fname>
@@ -6005,7 +6005,7 @@ remote host :
     C:\WINDOWS\system32\Macromed\Flash\Flash10m.ocx, 10.2.152.26
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="58181" pluginName="Windows DNS Server Enumeration" pluginFamily="Windows">
+<ReportItem port="195" svc_name="cifs" protocol="tcp" severity="0" pluginID="58181" pluginName="Windows DNS Server Enumeration" pluginFamily="Windows">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <description>Nessus was able to enumerate the DNS servers configured on the remote Windows host by looking in the registry.</description>
 <fname>smb_dns_servers.nasl</fname>
@@ -6024,7 +6024,7 @@ Network Connection : Local Area Connection
 NameServer: 192.168.0.1
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="52977" pluginName="MS KB2524375: Fraudulent Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
+<ReportItem port="195" svc_name="cifs" protocol="tcp" severity="2" pluginID="52977" pluginName="MS KB2524375: Fraudulent Digital Certificates Could Allow Spoofing" pluginFamily="Windows">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>6.8</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:M/Au:N/C:P/I:P/A:P</cvss_vector>
@@ -6055,7 +6055,7 @@ SOFTWARE\Microsoft\SystemCertificates\Disallowed\Certificates\1916A2AF346D399F50
 This indicates the update has not been applied.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="38687" pluginName="Microsoft Windows Security Center Settings" pluginFamily="Windows">
+<ReportItem port="180" svc_name="cifs" protocol="tcp" severity="0" pluginID="38687" pluginName="Microsoft Windows Security Center Settings" pluginFamily="Windows">
 <description>By connecting to the remote host with the supplied credentials, this plugin enumerates Windows Security Center settings on the remote host.</description>
 <fname>security_center_settings.nasl</fname>
 <plugin_modification_date>2011/06/22</plugin_modification_date>
@@ -6078,7 +6078,7 @@ UpdatesDisableNotify : 0
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="48761" pluginName="MS KB982316: Elevation of Privilege Using Windows Service Isolation Bypass" pluginFamily="Windows">
+<ReportItem port="180" svc_name="cifs" protocol="tcp" severity="2" pluginID="48761" pluginName="MS KB982316: Elevation of Privilege Using Windows Service Isolation Bypass" pluginFamily="Windows">
 <bid>42278</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-1886</cve>
@@ -6118,7 +6118,7 @@ The Network Service group has Full Control rights to :
   HKLM\Software\Microsoft\Windows\CurrentVersion\Telephony
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="39622" pluginName="MS09-032: Cumulative Security Update of ActiveX Kill Bits (973346)" pluginFamily="Windows">
+<ReportItem port="170" svc_name="cifs" protocol="tcp" severity="2" pluginID="39622" pluginName="MS09-032: Cumulative Security Update of ActiveX Kill Bits (973346)" pluginFamily="Windows">
 <bid>35558</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -6217,7 +6217,7 @@ Here is the list of anti-virus software registered under the
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="35070" pluginName="MS08-071: Vulnerabilities in GDI+ Could Allow Remote Code Execution (956802)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="170" svc_name="cifs" protocol="tcp" severity="3" pluginID="35070" pluginName="MS08-071: Vulnerabilities in GDI+ Could Allow Remote Code Execution (956802)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>32634</bid>
 <bid>32637</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -6260,7 +6260,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-071</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49225" pluginName="MS10-067: Vulnerability in WordPad Text Converters Could Allow Remote Code Execution (2259922)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="170" svc_name="cifs" protocol="tcp" severity="3" pluginID="49225" pluginName="MS10-067: Vulnerability in WordPad Text Converters Could Allow Remote Code Execution (2259922)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43122</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-2563</cve>
@@ -6295,7 +6295,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-067</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53390" pluginName="MS11-033: Vulnerability in WordPad Text Converters Could Allow Remote Code Execution (2485663)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="53390" pluginName="MS11-033: Vulnerability in WordPad Text Converters Could Allow Remote Code Execution (2485663)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47236</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0028</cve>
@@ -6334,7 +6334,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-033</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="42118" pluginName="MS09-062: Vulnerabilities in GDI+ Could Allow Remote Code Execution (957488)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="42118" pluginName="MS09-062: Vulnerabilities in GDI+ Could Allow Remote Code Execution (957488)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36619</bid>
 <bid>36645</bid>
 <bid>36646</bid>
@@ -6403,7 +6403,7 @@ have been patched.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="43065" pluginName="MS09-073: Vulnerability in WordPad and Office Text Converters Could Allow Remote Code Execution (975539)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="43065" pluginName="MS09-073: Vulnerability in WordPad and Office Text Converters Could Allow Remote Code Execution (975539)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>37216</bid>
 <cpe>cpe:/a:microsoft:office</cpe>
 <cve>CVE-2009-2506</cve>
@@ -6442,7 +6442,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-073</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53386" pluginName="MS11-029: Vulnerability in GDI+ Could Allow Remote Code Execution (2489979)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="53386" pluginName="MS11-029: Vulnerability in GDI+ Could Allow Remote Code Execution (2489979)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47250</bid>
 <cpe>cpe:/a:microsoft:office</cpe>
 <cve>CVE-2011-0041</cve>
@@ -6478,7 +6478,7 @@ have been patched.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49221" pluginName="MS10-063: Vulnerability in Unicode Scripts Processor Could Allow Remote Code Execution (2320113)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="49221" pluginName="MS10-063: Vulnerability in Unicode Scripts Processor Could Allow Remote Code Execution (2320113)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43068</bid>
 <cpe>cpe:/a:microsoft:office</cpe>
 <cve>CVE-2010-2738</cve>
@@ -6518,7 +6518,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-063</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="45506" pluginName="MS10-019: Vulnerabilities in Windows Could Allow Remote Code Execution (981210)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="45506" pluginName="MS10-019: Vulnerabilities in Windows Could Allow Remote Code Execution (981210)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>39328</bid>
 <bid>39332</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -6558,7 +6558,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-019</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="44421" pluginName="MS10-011: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (978037)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="44421" pluginName="MS10-011: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (978037)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38098</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0023</cve>
@@ -6596,7 +6596,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-011</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="33879" pluginName="MS08-050: Vulnerability in Windows Messenger Could Allow Information Disclosure (955702)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="33879" pluginName="MS08-050: Vulnerability in Windows Messenger Could Allow Information Disclosure (955702)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>30551</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-0082</cve>
@@ -6635,7 +6635,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-050</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="45507" pluginName="MS10-020: Vulnerabilities in SMB Client Could Allow Remote Code Execution (980232)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="45507" pluginName="MS10-020: Vulnerabilities in SMB Client Could Allow Remote Code Execution (980232)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36989</bid>
 <bid>39312</bid>
 <bid>39336</bid>
@@ -6698,7 +6698,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-020</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34409" pluginName="MS08-064: Microsoft Windows Virtual Address Descriptors (VAD) Local Privilege Escalation (956841)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="34409" pluginName="MS08-064: Microsoft Windows Virtual Address Descriptors (VAD) Local Privilege Escalation (956841)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>31675</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-4036</cve>
@@ -6732,7 +6732,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-064</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="44423" pluginName="MS10-013: Vulnerability in Microsoft DirectShow Could Allow Remote Code Execution (977935)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="44423" pluginName="MS10-013: Vulnerability in Microsoft DirectShow Could Allow Remote Code Execution (977935)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38112</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0250</cve>
@@ -6773,7 +6773,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-013</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51168" pluginName="MS10-096: Vulnerability in Windows Address Book Could Allow Remote Code Execution (2423089)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="51168" pluginName="MS10-096: Vulnerability in Windows Address Book Could Allow Remote Code Execution (2423089)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42648</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3147</cve>
@@ -6813,7 +6813,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-096</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="46841" pluginName="MS10-034: Cumulative Security Update of ActiveX Kill Bits (980195)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="46841" pluginName="MS10-034: Cumulative Security Update of ActiveX Kill Bits (980195)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38045</bid>
 <bid>40490</bid>
 <bid>40494</bid>
@@ -6872,7 +6872,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59455" pluginName="MS12-037: Cumulative Security Update for Internet Explorer (2699988)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="59455" pluginName="MS12-037: Cumulative Security Update for Internet Explorer (2699988)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>53841</bid>
 <bid>53842</bid>
 <bid>53843</bid>
@@ -6970,7 +6970,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-037</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="33877" pluginName="MS08-048: Security Update for Outlook Express and Windows Mail (951066)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="33877" pluginName="MS08-048: Security Update for Outlook Express and Windows Mail (951066)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>30585</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-1448</cve>
@@ -7006,7 +7006,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS08-048</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="51910" pluginName="MS11-010: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2476687)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="51910" pluginName="MS11-010: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2476687)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46142</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0030</cve>
@@ -7042,7 +7042,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-010</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55124" pluginName="MS11-044: Vulnerability in .NET Framework Could Allow Remote Code Execution (2538814)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="55124" pluginName="MS11-044: Vulnerability in .NET Framework Could Allow Remote Code Execution (2538814)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47834</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1271</cve>
@@ -7087,7 +7087,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-044</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56451" pluginName="MS11-077: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2567053)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="56451" pluginName="MS11-077: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2567053)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>49968</bid>
 <bid>49973</bid>
 <bid>49975</bid>
@@ -7150,7 +7150,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-077</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="33135" pluginName="MS08-033: Vulnerabilities in DirectX Could Allow Remote Code Execution (951698)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="33135" pluginName="MS08-033: Vulnerabilities in DirectX Could Allow Remote Code Execution (951698)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>29578</bid>
 <bid>29581</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -7190,7 +7190,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-033</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="36150" pluginName="MS09-012: Vulnerabilities in Windows Could Allow Elevation of Privilege (959454)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="36150" pluginName="MS09-012: Vulnerabilities in Windows Could Allow Elevation of Privilege (959454)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>28833</bid>
 <bid>34442</bid>
 <bid>34443</bid>
@@ -7237,7 +7237,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-012</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53391" pluginName="MS11-034: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2506223)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="53391" pluginName="MS11-034: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2506223)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47194</bid>
 <bid>47202</bid>
 <bid>47203</bid>
@@ -7393,7 +7393,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-034</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="36151" pluginName="MS09-013: Vulnerabilities in Windows HTTP Services Could Allow Remote Code Execution (960803)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="36151" pluginName="MS09-013: Vulnerabilities in Windows HTTP Services Could Allow Remote Code Execution (960803)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>34435</bid>
 <bid>34437</bid>
 <bid>34439</bid>
@@ -7445,7 +7445,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-013</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51906" pluginName="MS11-006: Vulnerability in Windows Shell Graphics Processing Could Allow Remote Code Execution (2483185)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="51906" pluginName="MS11-006: Vulnerability in Windows Shell Graphics Processing Could Allow Remote Code Execution (2483185)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45662</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3970</cve>
@@ -7485,7 +7485,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-006</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53382" pluginName="MS11-025: Vulnerability in Microsoft Foundation Class (MFC) Library Could Allow Remote Code Execution (2500212)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="53382" pluginName="MS11-025: Vulnerability in Microsoft Foundation Class (MFC) Library Could Allow Remote Code Execution (2500212)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42811</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3190</cve>
@@ -7530,7 +7530,7 @@ been patched :
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="39347" pluginName="MS09-025: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (968537)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="39347" pluginName="MS09-025: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (968537)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35120</bid>
 <bid>35121</bid>
 <bid>35238</bid>
@@ -7585,7 +7585,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-025</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="39344" pluginName="MS09-022: Vulnerabilities in Windows Print Spooler Could Allow Remote Code Execution (961501)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="4" pluginID="39344" pluginName="MS09-022: Vulnerabilities in Windows Print Spooler Could Allow Remote Code Execution (961501)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35206</bid>
 <bid>35208</bid>
 <bid>35209</bid>
@@ -7637,7 +7637,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-022</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="61528" pluginName="MS12-053: Vulnerability in Remote Desktop Could Allow Remote Code Execution (2723135)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="61528" pluginName="MS12-053: Vulnerability in Remote Desktop Could Allow Remote Code Execution (2723135)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54935</bid>
 <cpe>cpe:/o:microsoft:windows_xp::sp3:x86</cpe>
 <cve>CVE-2012-2526</cve>
@@ -7679,7 +7679,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-053</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40565" pluginName="MS09-044: Vulnerabilities in Remote Desktop Connection Could Allow Remote Code Execution (970927)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="40565" pluginName="MS09-044: Vulnerabilities in Remote Desktop Connection Could Allow Remote Code Execution (970927)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35971</bid>
 <bid>35973</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -7724,7 +7724,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-044</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58655" pluginName="MS12-023: Cumulative Security Update for Internet Explorer (2675157)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="58655" pluginName="MS12-023: Cumulative Security Update for Internet Explorer (2675157)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>52889</bid>
 <bid>52890</bid>
 <bid>52904</bid>
@@ -7779,7 +7779,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-023</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="61530" pluginName="MS12-055: Vulnerability in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2731847)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="61530" pluginName="MS12-055: Vulnerability in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2731847)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54873</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-2527</cve>
@@ -7816,7 +7816,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-055</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48288" pluginName="MS10-051: Vulnerability in Microsoft XML Core Services Could Allow Remote Code Execution (2079403)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="48288" pluginName="MS10-051: Vulnerability in Microsoft XML Core Services Could Allow Remote Code Execution (2079403)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42300</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-2561</cve>
@@ -7852,7 +7852,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-051</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="62223" pluginName="MS12-063: Cumulative Security Update for Internet Explorer (2744842)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="62223" pluginName="MS12-063: Cumulative Security Update for Internet Explorer (2744842)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>55562</bid>
 <bid>55641</bid>
 <bid>55645</bid>
@@ -7901,7 +7901,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-063</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55132" pluginName="MS11-052: Vulnerability in Vector Markup Language Could Allow Remote Code Execution (2544521)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="55132" pluginName="MS11-052: Vulnerability in Vector Markup Language Could Allow Remote Code Execution (2544521)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48173</bid>
 <cpe>cpe:/o:microsoft:windows
 cpe:/a:microsoft:internet_explorer</cpe>
@@ -7942,7 +7942,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-052</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="49695" pluginName="MS10-070: Vulnerability in ASP.NET Could Allow Information Disclosure (2418042)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="49695" pluginName="MS10-070: Vulnerability in ASP.NET Could Allow Information Disclosure (2418042)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43316</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3332</cve>
@@ -7981,7 +7981,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-070</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="33133" pluginName="MS08-031: Cumulative Security Update for Internet Explorer (950759)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="33133" pluginName="MS08-031: Cumulative Security Update for Internet Explorer (950759)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>28379</bid>
 <bid>29556</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -8023,7 +8023,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS08-031</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53388" pluginName="MS11-031: Vulnerability in JScript and VBScript Scripting Engines Could Allow Remote Code Execution (2514666)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="53388" pluginName="MS11-031: Vulnerability in JScript and VBScript Scripting Engines Could Allow Remote Code Execution (2514666)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47249</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0663</cve>
@@ -8062,7 +8062,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-031</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48286" pluginName="MS10-049: Vulnerabilities in SChannel could allow Remote Code Execution (980436)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="48286" pluginName="MS10-049: Vulnerabilities in SChannel could allow Remote Code Execution (980436)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36935</bid>
 <bid>42246</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -8106,7 +8106,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-049</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49955" pluginName="MS10-078: Vulnerabilities in the OpenType Font (OTF) Format Driver Could Allow Elevation of Privilege (2279986)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="49955" pluginName="MS10-078: Vulnerabilities in the OpenType Font (OTF) Format Driver Could Allow Elevation of Privilege (2279986)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43778</bid>
 <bid>43779</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -8150,7 +8150,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-078</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34122" pluginName="MS08-054: Vulnerability in Windows Media Player Could Allow Remote Code Execution (954154)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="34122" pluginName="MS08-054: Vulnerability in Windows Media Player Could Allow Remote Code Execution (954154)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>30550</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-2253</cve>
@@ -8191,7 +8191,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-054</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="33134" pluginName="MS08-032: Cumulative Security Update of ActiveX Kill Bits (950760)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="33134" pluginName="MS08-032: Cumulative Security Update of ActiveX Kill Bits (950760)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>29558</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2007-0675</cve>
@@ -8240,7 +8240,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="43063" pluginName="MS09-071: Vulnerabilities in Internet Authentication Service Could Allow Remote Code Execution (974318)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="4" pluginID="43063" pluginName="MS09-071: Vulnerabilities in Internet Authentication Service Could Allow Remote Code Execution (974318)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>37197</bid>
 <bid>37198</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -8289,7 +8289,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-071</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="36153" pluginName="MS09-015: Blended Threat Vulnerability in SearchPath Could Allow Elevation of Privilege (959426)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="36153" pluginName="MS09-015: Blended Threat Vulnerability in SearchPath Could Allow Elevation of Privilege (959426)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>29445</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-2540</cve>
@@ -8326,7 +8326,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms09-015</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40890" pluginName="MS09-047: Vulnerabilities in Windows Media Format Could Allow Remote Code Execution (973812)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="40890" pluginName="MS09-047: Vulnerabilities in Windows Media Format Could Allow Remote Code Execution (973812)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36225</bid>
 <bid>36228</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -8375,7 +8375,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-047</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="44110" pluginName="MS10-002: Cumulative Security Update for Internet Explorer (978207)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="44110" pluginName="MS10-002: Cumulative Security Update for Internet Explorer (978207)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>37815</bid>
 <bid>37883</bid>
 <bid>37884</bid>
@@ -8443,7 +8443,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-002</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="45020" pluginName="MS10-016: Vulnerability in Windows Movie Maker Could Allow Remote Code Execution (975561)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="45020" pluginName="MS10-016: Vulnerability in Windows Movie Maker Could Allow Remote Code Execution (975561)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38515</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0265</cve>
@@ -8480,7 +8480,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-016</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57471" pluginName="MS12-003: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2646524)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="57471" pluginName="MS12-003: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2646524)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>51270</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-0005</cve>
@@ -8519,7 +8519,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-003</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48285" pluginName="MS10-048: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2160329)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="48285" pluginName="MS10-048: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2160329)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>39630</bid>
 <bid>42206</bid>
 <bid>42210</bid>
@@ -8583,7 +8583,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-048</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="46844" pluginName="MS10-037: Vulnerability in the OpenType Compact Font Format (CFF) Driver Could Allow Elevation of Privilege (980218)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="46844" pluginName="MS10-037: Vulnerability in the OpenType Compact Font Format (CFF) Driver Could Allow Elevation of Privilege (980218)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>40572</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0819</cve>
@@ -8619,7 +8619,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-037</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="61527" pluginName="MS12-052: Cumulative Security Update for Internet Explorer (2722913)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="61527" pluginName="MS12-052: Cumulative Security Update for Internet Explorer (2722913)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54945</bid>
 <bid>54950</bid>
 <bid>54951</bid>
@@ -8673,7 +8673,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-052</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55126" pluginName="MS11-046: Vulnerability in Ancillary Function Driver Could Allow Elevation of Privilege (2503665)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="55126" pluginName="MS11-046: Vulnerability in Ancillary Function Driver Could Allow Elevation of Privilege (2503665)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48198</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1249</cve>
@@ -8715,7 +8715,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-046</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59906" pluginName="MS12-043: Vulnerability in Microsoft XML Core Services Could Allow Remote Code Execution (2722479)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="59906" pluginName="MS12-043: Vulnerability in Microsoft XML Core Services Could Allow Remote Code Execution (2722479)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>53934</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-1889</cve>
@@ -8758,7 +8758,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-043</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48284" pluginName="MS10-047: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (981852)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="48284" pluginName="MS10-047: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (981852)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42211</bid>
 <bid>42213</bid>
 <bid>42221</bid>
@@ -8807,7 +8807,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-047</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34408" pluginName="MS08-063: Microsoft Windows SMB File Name Handling Remote Underflow (957095)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="34408" pluginName="MS08-063: Microsoft Windows SMB File Name Handling Remote Underflow (957095)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>31647</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-4038</cve>
@@ -8842,7 +8842,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-063</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="46839" pluginName="MS10-032: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (979559)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="46839" pluginName="MS10-032: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (979559)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>40508</bid>
 <bid>40569</bid>
 <bid>40570</bid>
@@ -8893,7 +8893,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-032</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51163" pluginName="MS10-091: Vulnerabilities in the OpenType Font (OTF) Driver Could Allow Remote Code Execution (2296199)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="51163" pluginName="MS10-091: Vulnerabilities in the OpenType Font (OTF) Driver Could Allow Remote Code Execution (2296199)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45311</bid>
 <bid>45315</bid>
 <bid>45316</bid>
@@ -8941,7 +8941,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-091</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="35221" pluginName="MS08-078: Microsoft Internet Explorer Security Update (960714)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="35221" pluginName="MS08-078: Microsoft Internet Explorer Security Update (960714)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>32721</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -8985,7 +8985,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS08-078</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="42114" pluginName="MS09-058: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (971486)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="42114" pluginName="MS09-058: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (971486)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36623</bid>
 <bid>36624</bid>
 <bid>36625</bid>
@@ -9039,7 +9039,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-058</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55130" pluginName="MS11-050: Cumulative Security Update for Internet Explorer (2530548)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="55130" pluginName="MS11-050: Cumulative Security Update for Internet Explorer (2530548)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48199</bid>
 <bid>48200</bid>
 <bid>48201</bid>
@@ -9128,7 +9128,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-050</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34403" pluginName="MS08-058: Microsoft Internet Explorer Multiple Vulnerabilities (956390)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="34403" pluginName="MS08-058: Microsoft Internet Explorer Multiple Vulnerabilities (956390)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>29960</bid>
 <bid>31615</bid>
 <bid>31616</bid>
@@ -9186,7 +9186,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS08-058</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59460" pluginName="MS12-042: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (2711167)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="59460" pluginName="MS12-042: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (2711167)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>52820</bid>
 <bid>53856</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -9235,7 +9235,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS12-042</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="46848" pluginName="MS10-041: Vulnerability in Microsoft .NET Framework Could Allow Tampering (981343)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="46848" pluginName="MS10-041: Vulnerability in Microsoft .NET Framework Could Allow Tampering (981343)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35671</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-0217</cve>
@@ -9272,7 +9272,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-041</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40889" pluginName="MS09-046: Vulnerability in DHTML Editing Component ActiveX Control Could Allow Remote Code Execution (956844)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="40889" pluginName="MS09-046: Vulnerability in DHTML Editing Component ActiveX Control Could Allow Remote Code Execution (956844)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36280</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-2519</cve>
@@ -9311,7 +9311,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-046</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57474" pluginName="MS12-006: Vulnerability in SSL/TLS Could Allow Information Disclosure (2643584)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="2" pluginID="57474" pluginName="MS12-006: Vulnerability in SSL/TLS Could Allow Information Disclosure (2643584)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>49778</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-3389</cve>
@@ -9350,7 +9350,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-006</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="45509" pluginName="MS10-022: Vulnerability in VBScript Scripting Engine Could Allow Remote Code Execution (981169)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="45509" pluginName="MS10-022: Vulnerability in VBScript Scripting Engine Could Allow Remote Code Execution (981169)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38463</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -9390,7 +9390,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-022</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55795" pluginName="MS11-065: Vulnerability in Remote Desktop Protocol Could Allow Denial of Service (2570222)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="110" svc_name="cifs" protocol="tcp" severity="3" pluginID="55795" pluginName="MS11-065: Vulnerability in Remote Desktop Protocol Could Allow Denial of Service (2570222)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48995</bid>
 <cpe>cpe:/o:microsoft:windows
 cpe:/a:microsoft:remote_desktop_protocol</cpe>
@@ -9429,7 +9429,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-065</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="39792" pluginName="MS09-029: Vulnerabilities in the Embedded OpenType Font Engine Could Allow Remote Code Execution (961371)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="39792" pluginName="MS09-029: Vulnerabilities in the Embedded OpenType Font Engine Could Allow Remote Code Execution (961371)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35186</bid>
 <bid>35187</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -9471,7 +9471,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-029</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="48291" pluginName="MS10-054: Vulnerabilities in SMB Server Could Allow Remote Code Execution (982214)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="4" pluginID="48291" pluginName="MS10-054: Vulnerabilities in SMB Server Could Allow Remote Code Execution (982214)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42224</bid>
 <bid>42263</bid>
 <bid>42267</bid>
@@ -9518,7 +9518,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-054</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="33441" pluginName="MS08-037: Vulnerabilities in DNS Could Allow Spoofing (953230)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="33441" pluginName="MS08-037: Vulnerabilities in DNS Could Allow Spoofing (953230)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>30131</bid>
 <bid>30132</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -9559,7 +9559,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-037</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51903" pluginName="MS11-003: Cumulative Security Update for Internet Explorer (2482017)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51903" pluginName="MS11-003: Cumulative Security Update for Internet Explorer (2482017)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45246</bid>
 <bid>46157</bid>
 <bid>46158</bid>
@@ -9621,7 +9621,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-003</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="61529" pluginName="MS12-054: Vulnerabilities in Windows Networking Components Could Allow Remote Code Execution (2733594)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="4" pluginID="61529" pluginName="MS12-054: Vulnerabilities in Windows Networking Components Could Allow Remote Code Execution (2733594)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54921</bid>
 <bid>54928</bid>
 <bid>54931</bid>
@@ -9677,7 +9677,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-054</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="33878" pluginName="MS08-049: Vulnerabilities in Event System Could Allow Remote Code Execution (950974)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="33878" pluginName="MS08-049: Vulnerabilities in Event System Could Allow Remote Code Execution (950974)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>30584</bid>
 <bid>30586</bid>
 <canvas_package>CANVAS</canvas_package>
@@ -9720,7 +9720,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-049</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48290" pluginName="MS10-053: Cumulative Security Update for Internet Explorer (2183461)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="48290" pluginName="MS10-053: Cumulative Security Update for Internet Explorer (2183461)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42257</bid>
 <bid>42258</bid>
 <bid>42288</bid>
@@ -9776,7 +9776,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-053</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57944" pluginName="MS12-010: Cumulative Security Update for Internet Explorer (2647516)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57944" pluginName="MS12-010: Cumulative Security Update for Internet Explorer (2647516)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>51931</bid>
 <bid>51932</bid>
 <bid>51933</bid>
@@ -9827,7 +9827,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-010</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="35075" pluginName="MS08-076: Vulnerabilities in Windows Media Components Could Allow Remote Code Execution (959807)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="35075" pluginName="MS08-076: Vulnerabilities in Windows Media Components Could Allow Remote Code Execution (959807)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>32653</bid>
 <bid>32654</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -9873,7 +9873,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-076</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="44422" pluginName="MS10-012: Vulnerabilities in SMB Could Allow Remote Code Execution (971468)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="4" pluginID="44422" pluginName="MS10-012: Vulnerabilities in SMB Could Allow Remote Code Execution (971468)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38049</bid>
 <bid>38051</bid>
 <bid>38054</bid>
@@ -9924,7 +9924,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-012</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40556" pluginName="MS09-037: Vulnerabilities in Microsoft Active Template Library (ATL) Could Allow Remote Code Execution (973908)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="40556" pluginName="MS09-037: Vulnerabilities in Microsoft Active Template Library (ATL) Could Allow Remote Code Execution (973908)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35558</bid>
 <bid>35585</bid>
 <bid>35828</bid>
@@ -9997,7 +9997,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-037</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="39791" pluginName="MS09-028: Vulnerabilities in Microsoft DirectShow Could Allow Remote Code Execution (971633)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="39791" pluginName="MS09-028: Vulnerabilities in Microsoft DirectShow Could Allow Remote Code Execution (971633)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35139</bid>
 <bid>35600</bid>
 <bid>35616</bid>
@@ -10044,7 +10044,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-028</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59911" pluginName="MS12-048: Vulnerability in Windows Shell Could Allow Remote Code Execution (2691442)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="59911" pluginName="MS12-048: Vulnerability in Windows Shell Could Allow Remote Code Execution (2691442)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54307</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-0175</cve>
@@ -10083,7 +10083,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS12-048</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51170" pluginName="MS10-098: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2436673)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51170" pluginName="MS10-098: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2436673)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42291</bid>
 <bid>45286</bid>
 <bid>45287</bid>
@@ -10139,7 +10139,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-098</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="53377" pluginName="MS11-020: Vulnerability in SMB Server Could Allow Remote Code Execution (2508429)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="4" pluginID="53377" pluginName="MS11-020: Vulnerability in SMB Server Could Allow Remote Code Execution (2508429)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47198</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0661</cve>
@@ -10176,7 +10176,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-020</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57472" pluginName="MS12-004: Vulnerabilities in Windows Media Could Allow Remote Code Execution (2636391)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57472" pluginName="MS12-004: Vulnerabilities in Windows Media Could Allow Remote Code Execution (2636391)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>51292</bid>
 <bid>51295</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -10232,7 +10232,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-004</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40561" pluginName="MS09-042: Vulnerability in Telnet Could Allow Remote Code Execution (960859)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="40561" pluginName="MS09-042: Vulnerability in Telnet Could Allow Remote Code Execution (960859)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35993</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-1930</cve>
@@ -10275,7 +10275,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-042</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49961" pluginName="MS10-084: Vulnerability in Windows Local Procedure Call Could Cause Elevation of Privilege (2360937)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="49961" pluginName="MS10-084: Vulnerability in Windows Local Procedure Call Could Cause Elevation of Privilege (2360937)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43777</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3222</cve>
@@ -10314,7 +10314,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-084</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="42112" pluginName="MS09-056: Vulnerabilities in Windows CryptoAPI Could Allow Spoofing (974571)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="42112" pluginName="MS09-056: Vulnerabilities in Windows CryptoAPI Could Allow Spoofing (974571)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36475</bid>
 <bid>36577</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -10361,7 +10361,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-056</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56449" pluginName="MS11-075: Vulnerability in Microsoft Active Accessibility Could Allow Remote Code Execution (2623699)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="56449" pluginName="MS11-075: Vulnerability in Microsoft Active Accessibility Could Allow Remote Code Execution (2623699)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>49976</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1247</cve>
@@ -10400,7 +10400,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-075</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="47750" pluginName="MS KB2286198: Windows Shell Shortcut Icon Parsing Arbitrary Code Execution" pluginFamily="Windows">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="47750" pluginName="MS KB2286198: Windows Shell Shortcut Icon Parsing Arbitrary Code Execution" pluginFamily="Windows">
 <bid>41732</bid>
 <canvas_package>CANVAS</canvas_package>
 <cert>940193</cert>
@@ -10450,7 +10450,7 @@ icons has not been disabled :
   Value : {00021401-0000-0000-C000-000000000046}
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48216" pluginName="MS10-046: Vulnerability in Windows Shell Could Allow Remote Code Execution (2286198)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="48216" pluginName="MS10-046: Vulnerability in Windows Shell Could Allow Remote Code Execution (2286198)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>41732</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -10493,7 +10493,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-046</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49953" pluginName="MS10-076: Vulnerability in the Embedded OpenType Font Engine Could Allow Remote Code Execution (982132)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="49953" pluginName="MS10-076: Vulnerability in the Embedded OpenType Font Engine Could Allow Remote Code Execution (982132)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43775</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-1883</cve>
@@ -10532,7 +10532,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-076</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51914" pluginName="MS11-014: Vulnerability in Local Security Authority Subsystem Service Could Allow Local Elevation of Privilege (2478960)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51914" pluginName="MS11-014: Vulnerability in Local Security Authority Subsystem Service Could Allow Local Elevation of Privilege (2478960)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46152</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0039</cve>
@@ -10571,7 +10571,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-014</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51913" pluginName="MS11-013: Vulnerabilities in Kerberos Could Allow Elevation of Privilege (2496930)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51913" pluginName="MS11-013: Vulnerabilities in Kerberos Could Allow Elevation of Privilege (2496930)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46130</bid>
 <bid>46140</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -10617,7 +10617,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-013</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53376" pluginName="MS11-019: Vulnerabilities in SMB Client Could Allow Remote Code Execution (2511455)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="53376" pluginName="MS11-019: Vulnerabilities in SMB Client Could Allow Remote Code Execution (2511455)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46360</bid>
 <bid>47239</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -10656,7 +10656,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-019</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="59912" pluginName="MS12-049: Vulnerability in TLS Could Allow Information Disclosure (2655992)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="59912" pluginName="MS12-049: Vulnerability in TLS Could Allow Information Disclosure (2655992)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54304</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-1870</cve>
@@ -10693,7 +10693,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS12-049</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="33137" pluginName="MS08-036: Vulnerabilities in Pragmatic General Multicast (PGM) Could Allow Denial of Service (950762)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="33137" pluginName="MS08-036: Vulnerabilities in Pragmatic General Multicast (PGM) Could Allow Denial of Service (950762)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>29508</bid>
 <bid>29509</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -10736,7 +10736,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-036</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="34476" pluginName="MS08-067: Microsoft Windows Server Service Crafted RPC Request Handling Unspecified Remote Code Execution (958644)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="4" pluginID="34476" pluginName="MS08-067: Microsoft Windows Server Service Crafted RPC Request Handling Unspecified Remote Code Execution (958644)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>31874</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -10778,7 +10778,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-067</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="53384" pluginName="MS11-027: Cumulative Security Update of ActiveX Kill Bits (2508272)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="53384" pluginName="MS11-027: Cumulative Security Update of ActiveX Kill Bits (2508272)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>40490</bid>
 <bid>40689</bid>
 <bid>45546</bid>
@@ -10838,7 +10838,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="46842" pluginName="MS10-035: Cumulative Security Update for Internet Explorer (982381)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="46842" pluginName="MS10-035: Cumulative Security Update for Internet Explorer (982381)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38055</bid>
 <bid>38056</bid>
 <bid>40410</bid>
@@ -10896,7 +10896,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-035</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="43064" pluginName="MS09-072: Cumulative Security Update for Internet Explorer (976325)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="43064" pluginName="MS09-072: Cumulative Security Update for Internet Explorer (976325)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35828</bid>
 <bid>37085</bid>
 <bid>37188</bid>
@@ -10951,7 +10951,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-072</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="42107" pluginName="MS09-051: Vulnerabilities in Windows Media Runtime Could Allow Remote Code Execution (975682)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="42107" pluginName="MS09-051: Vulnerabilities in Windows Media Runtime Could Allow Remote Code Execution (975682)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36602</bid>
 <bid>36614</bid>
 <canvas_package>CANVAS</canvas_package>
@@ -10999,7 +10999,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-051</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49950" pluginName="MS10-073: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (981957)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="49950" pluginName="MS10-073: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (981957)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>41280</bid>
 <bid>43773</bid>
 <bid>43774</bid>
@@ -11057,7 +11057,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-073</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="55572" pluginName="MS11-056: Vulnerabilities in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2507938)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="55572" pluginName="MS11-056: Vulnerabilities in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2507938)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48588</bid>
 <bid>48598</bid>
 <bid>48604</bid>
@@ -11107,7 +11107,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-056</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57273" pluginName="MS11-087: Vulnerability in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2639417)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57273" pluginName="MS11-087: Vulnerability in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2639417)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>50462</bid>
 <cert>316553</cert>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -11152,7 +11152,7 @@ http://technet.microsoft.com/en-us/security/Bulletin/MS11-087</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34406" pluginName="MS08-061: Microsoft Windows Kernel Multiple Privilege Elevation (954211)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="34406" pluginName="MS08-061: Microsoft Windows Kernel Multiple Privilege Elevation (954211)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>31651</bid>
 <bid>31652</bid>
 <bid>31653</bid>
@@ -11194,7 +11194,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-061</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="44415" pluginName="MS10-005: Vulnerability in Microsoft Paint Could Allow Remote Code Execution (978706)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="44415" pluginName="MS10-005: Vulnerability in Microsoft Paint Could Allow Remote Code Execution (978706)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38042</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0028</cve>
@@ -11235,7 +11235,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-005</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="44417" pluginName="MS10-007: Vulnerability in Windows Shell Handler Could Allow Remote Code Execution (975713)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="44417" pluginName="MS10-007: Vulnerability in Windows Shell Handler Could Allow Remote Code Execution (975713)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>37884</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0027</cve>
@@ -11276,7 +11276,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-007</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="39341" pluginName="MS09-019: Cumulative Security Update for Internet Explorer (969897)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="39341" pluginName="MS09-019: Cumulative Security Update for Internet Explorer (969897)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>24283</bid>
 <bid>35198</bid>
 <bid>35200</bid>
@@ -11343,7 +11343,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-019</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57470" pluginName="MS12-002: Vulnerability in Windows Object Packager Could Allow Remote Code Execution (2603381)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57470" pluginName="MS12-002: Vulnerability in Windows Object Packager Could Allow Remote Code Execution (2603381)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>51297</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-0009</cve>
@@ -11375,7 +11375,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-002</solution>
 <xref>MSFT:MS12-002</xref>
 <xref>IAVA:2012-A-0006</xref>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="33875" pluginName="MS08-046: Vulnerability in Microsoft Windows Image Color Management System Could Allow Remote Code Execution (952954)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="33875" pluginName="MS08-046: Vulnerability in Microsoft Windows Image Color Management System Could Allow Remote Code Execution (952954)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>30594</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-2245</cve>
@@ -11413,7 +11413,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-046</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="43061" pluginName="MS09-069: Vulnerability in Local Security Authority Subsystem Service Could Allow Denial of Service (974392)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="43061" pluginName="MS09-069: Vulnerability in Local Security Authority Subsystem Service Could Allow Denial of Service (974392)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>37218</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-3675</cve>
@@ -11452,7 +11452,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-069</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58656" pluginName="MS12-024: Vulnerability in Windows Could Allow Remote Code Execution (2653956)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="58656" pluginName="MS12-024: Vulnerability in Windows Could Allow Remote Code Execution (2653956)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>52868</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-0151</cve>
@@ -11491,7 +11491,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS12-024</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59454" pluginName="MS12-036: Vulnerability in Remote Desktop Could Allow Remote Code Execution (2685939)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="59454" pluginName="MS12-036: Vulnerability in Remote Desktop Could Allow Remote Code Execution (2685939)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>53826</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-0173</cve>
@@ -11531,7 +11531,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-036</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57942" pluginName="MS12-008: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2660465)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57942" pluginName="MS12-008: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2660465)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>51122</bid>
 <bid>51920</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -11572,7 +11572,7 @@ http://technet.microsoft.com/en-us/security/Bulletin/MS12-008</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51162" pluginName="MS10-090: Cumulative Security Update for Internet Explorer (2416400)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51162" pluginName="MS10-090: Cumulative Security Update for Internet Explorer (2416400)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>44536</bid>
 <bid>45255</bid>
 <bid>45256</bid>
@@ -11637,7 +11637,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-090</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55787" pluginName="MS11-057: Critical Cumulative Security Update for Internet Explorer (2559049)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="55787" pluginName="MS11-057: Critical Cumulative Security Update for Internet Explorer (2559049)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47989</bid>
 <bid>48994</bid>
 <bid>49023</bid>
@@ -11701,7 +11701,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-057</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34744" pluginName="MS08-069: Vulnerabilities in Microsoft XML Core Services Could Allow Remote Code Execution (955218)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="34744" pluginName="MS08-069: Vulnerabilities in Microsoft XML Core Services Could Allow Remote Code Execution (955218)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>21872</bid>
 <bid>32155</bid>
 <bid>32204</bid>
@@ -11749,7 +11749,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-069</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49948" pluginName="MS10-071: Cumulative Security Update for Internet Explorer (2360131)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="49948" pluginName="MS10-071: Cumulative Security Update for Internet Explorer (2360131)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42993</bid>
 <bid>42467</bid>
 <bid>43695</bid>
@@ -11821,7 +11821,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-071</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="35823" pluginName="MS09-007: Vulnerability in SChannel Could Allow Spoofing (960225)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="35823" pluginName="MS09-007: Vulnerability in SChannel Could Allow Spoofing (960225)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>34015</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-0085</cve>
@@ -11858,7 +11858,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-007</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53389" pluginName="MS11-032: Vulnerability in the OpenType Compact Font Format (CFF) Driver Could Allow Remote Code Execution (2507618)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="53389" pluginName="MS11-032: Vulnerability in the OpenType Compact Font Format (CFF) Driver Could Allow Remote Code Execution (2507618)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47179</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0034</cve>
@@ -11898,7 +11898,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-032</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="47045" pluginName="MS KB2219475: Windows Help Center hcp:// Protocol Handler Arbitrary Code Execution" pluginFamily="Windows">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="47045" pluginName="MS KB2219475: Windows Help Center hcp:// Protocol Handler Arbitrary Code Execution" pluginFamily="Windows">
 <bid>40721</bid>
 <bid>40725</bid>
 <canvas_package>CANVAS</canvas_package>
@@ -11946,7 +11946,7 @@ Note, though, that applying the workaround will break local, legitimate help lin
   Handler : %SystemRoot%\PCHEALTH\HELPCTR\Binaries\HelpCtr.exe -FromHCP -url &quot;%1&quot;
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="47710" pluginName="MS10-042: Vulnerability in Help and Support Center Could Allow Remote Code Execution (2229593)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="47710" pluginName="MS10-042: Vulnerability in Help and Support Center Could Allow Remote Code Execution (2229593)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>40725</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -11990,7 +11990,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-042</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49960" pluginName="MS10-083: Vulnerability in COM Validation in Windows Shell and WordPad Could Allow Remote Code Execution (2405882)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="49960" pluginName="MS10-083: Vulnerability in COM Validation in Windows Shell and WordPad Could Allow Remote Code Execution (2405882)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>40574</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-1263</cve>
@@ -12029,7 +12029,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-083</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="49227" pluginName="MS10-069: Vulnerability in Windows Client/Server Runtime Subsystem Could Allow Elevation of Privilege (2121546)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="49227" pluginName="MS10-069: Vulnerability in Windows Client/Server Runtime Subsystem Could Allow Elevation of Privilege (2121546)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43121</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-1891</cve>
@@ -12063,7 +12063,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-069</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59459" pluginName="MS12-041: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2709162)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="59459" pluginName="MS12-041: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2709162)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>53815</bid>
 <bid>53816</bid>
 <bid>53817</bid>
@@ -12119,7 +12119,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-041</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="42110" pluginName="MS09-054: Cumulative Security Update for Internet Explorer (974455)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="42110" pluginName="MS09-054: Cumulative Security Update for Internet Explorer (974455)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36616</bid>
 <bid>36620</bid>
 <bid>36621</bid>
@@ -12169,7 +12169,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-054</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="43865" pluginName="MS10-001: Vulnerability in the Embedded OpenType Font Engine Could Allow Remote Code Execution (972270)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="43865" pluginName="MS10-001: Vulnerability in the Embedded OpenType Font Engine Could Allow Remote Code Execution (972270)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>37671</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0018</cve>
@@ -12207,7 +12207,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-001</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56455" pluginName="MS11-081: Critical Cumulative Security Update for Internet Explorer (2586448)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="56455" pluginName="MS11-081: Critical Cumulative Security Update for Internet Explorer (2586448)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>49947</bid>
 <bid>49960</bid>
 <bid>49961</bid>
@@ -12278,7 +12278,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-081</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="52583" pluginName="MS11-015: Vulnerabilities in Windows Media Could Allow Remote Code Execution (2510030)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="52583" pluginName="MS11-015: Vulnerabilities in Windows Media Could Allow Remote Code Execution (2510030)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46680</bid>
 <bid>46682</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -12325,7 +12325,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-015</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="42108" pluginName="MS09-052: Vulnerability in Windows Media Player Could Allow Remote Code Execution (974112)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="42108" pluginName="MS09-052: Vulnerability in Windows Media Player Could Allow Remote Code Execution (974112)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36644</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-2527</cve>
@@ -12367,7 +12367,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-052</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40407" pluginName="MS09-034: Cumulative Security Update for Internet Explorer (972260)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="40407" pluginName="MS09-034: Cumulative Security Update for Internet Explorer (972260)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35826</bid>
 <bid>35827</bid>
 <bid>35831</bid>
@@ -12413,7 +12413,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-034</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="42111" pluginName="MS09-055: Cumulative Security Update of ActiveX Kill Bits (973525)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="42111" pluginName="MS09-055: Cumulative Security Update of ActiveX Kill Bits (973525)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35828</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-2493</cve>
@@ -12453,7 +12453,7 @@ that have not been set because &apos;Thorough tests&apos; was not enabled
 when this scan was run.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57414" pluginName="MS11-100: Vulnerabilities in .NET Framework Could Allow Elevation of Privilege (2638420)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57414" pluginName="MS11-100: Vulnerabilities in .NET Framework Could Allow Elevation of Privilege (2638420)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>51186</bid>
 <bid>51201</bid>
 <bid>51202</bid>
@@ -12515,7 +12515,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-100</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34411" pluginName="MS08-066: Microsoft Windows Ancillary Function Driver (afd.sys) Local Privilege Escalation (956803)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="34411" pluginName="MS08-066: Microsoft Windows Ancillary Function Driver (afd.sys) Local Privilege Escalation (956803)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>31673</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-3464</cve>
@@ -12553,7 +12553,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-066</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59043" pluginName="MS12-035: Vulnerabilities in .NET Framework Could Allow Remote Code Execution (2693777)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="59043" pluginName="MS12-035: Vulnerabilities in .NET Framework Could Allow Remote Code Execution (2693777)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>53356</bid>
 <bid>53357</bid>
 <cpe>cpe:/o:microsoft:windows
@@ -12598,7 +12598,7 @@ http://technet.microsoft.com/en-us/security/Bulletin/MS12-035</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49959" pluginName="MS10-082: Vulnerability in Windows Media Player Could Allow Remote Code Execution (2378111)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="49959" pluginName="MS10-082: Vulnerability in Windows Media Player Could Allow Remote Code Execution (2378111)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43772</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-2745</cve>
@@ -12637,7 +12637,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-082</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="58330" pluginName="MS12-018: Vulnerability in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2641653)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="58330" pluginName="MS12-018: Vulnerability in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2641653)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>52317</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-0157</cve>
@@ -12671,7 +12671,7 @@ http://technet.microsoft.com/en-us/security/Bulletin/MS12-018</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59908" pluginName="MS12-045: Vulnerability in Microsoft Data Access Components Could Allow Remote Code Execution (2698365)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="59908" pluginName="MS12-045: Vulnerability in Microsoft Data Access Components Could Allow Remote Code Execution (2698365)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54308</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-1891</cve>
@@ -12710,7 +12710,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-045</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59044" pluginName="MS 2695962: Update Rollup for ActiveX Kill Bits (2695962)" pluginFamily="Windows">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="59044" pluginName="MS 2695962: Update Rollup for ActiveX Kill Bits (2695962)" pluginFamily="Windows">
 <bid>52482</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2012-0358</cve>
@@ -12752,7 +12752,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="35072" pluginName="MS08-073: Microsoft Internet Explorer Multiple Vulnerabilities (958215)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="35072" pluginName="MS08-073: Microsoft Internet Explorer Multiple Vulnerabilities (958215)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>32586</bid>
 <bid>32593</bid>
 <bid>32595</bid>
@@ -12800,7 +12800,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS08-073</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55118" pluginName="MS11-038: Vulnerability in OLE Automation Could Allow Remote Code Execution (2476490)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="55118" pluginName="MS11-038: Vulnerability in OLE Automation Could Allow Remote Code Execution (2476490)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48174</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0658</cve>
@@ -12837,7 +12837,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-038</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51911" pluginName="MS11-011: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (2393802)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51911" pluginName="MS11-011: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (2393802)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45045</bid>
 <bid>46136</bid>
 <canvas_package>CANVAS</canvas_package>
@@ -12893,7 +12893,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-011</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58332" pluginName="MS12-020: Vulnerabilities in Remote Desktop Could Allow Remote Code Execution (2671387)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="58332" pluginName="MS12-020: Vulnerabilities in Remote Desktop Could Allow Remote Code Execution (2671387)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>52353</bid>
 <bid>52354</bid>
 <canvas_package>White_Phosphorus</canvas_package>
@@ -12952,7 +12952,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-020</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40560" pluginName="MS09-041: Vulnerability in Workstation Service Could Allow Elevation of Privilege (971657)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="40560" pluginName="MS09-041: Vulnerability in Workstation Service Could Allow Elevation of Privilege (971657)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35972</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-1544</cve>
@@ -12991,7 +12991,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-041</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="46312" pluginName="MS10-030: Vulnerability in Outlook Express and Windows Mail Could Allow Remote Code Execution (978542)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="46312" pluginName="MS10-030: Vulnerability in Outlook Express and Windows Mail Could Allow Remote Code Execution (978542)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>39927</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0816</cve>
@@ -13030,7 +13030,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-030</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="35361" pluginName="MS09-001: Vulnerabilities in SMB Could Allow Remote Code Execution (958687)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="4" pluginID="35361" pluginName="MS09-001: Vulnerabilities in SMB Could Allow Remote Code Execution (958687)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>31179</bid>
 <bid>33121</bid>
 <bid>33122</bid>
@@ -13075,7 +13075,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-001</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53381" pluginName="MS11-024: Vulnerability in Windows Fax Cover Page Editor Could Allow Remote Code Execution (2527308)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="53381" pluginName="MS11-024: Vulnerability in Windows Fax Cover Page Editor Could Allow Remote Code Execution (2527308)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45942</bid>
 <bid>45583</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -13120,7 +13120,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-024</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48292" pluginName="MS10-055: Vulnerability in Cinepak Codec Could Allow Remote Code Execution (982665)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="48292" pluginName="MS10-055: Vulnerability in Cinepak Codec Could Allow Remote Code Execution (982665)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42256</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-2553</cve>
@@ -13157,7 +13157,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-055</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49220" pluginName="MS10-062: Vulnerability in MPEG-4 Codec Could Allow Remote Code Execution (975558)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="49220" pluginName="MS10-062: Vulnerability in MPEG-4 Codec Could Allow Remote Code Execution (975558)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43039</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0818</cve>
@@ -13196,7 +13196,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-062</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="53383" pluginName="MS11-026: Vulnerability in MHTML Could Allow Information Disclosure (2503658)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="53383" pluginName="MS11-026: Vulnerability in MHTML Could Allow Information Disclosure (2503658)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46055</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0096</cve>
@@ -13232,7 +13232,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-026</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="55117" pluginName="MS11-037: Vulnerability in MHTML Could Allow Information Disclosure (2544893)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="55117" pluginName="MS11-037: Vulnerability in MHTML Could Allow Information Disclosure (2544893)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48205</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1894</cve>
@@ -13269,7 +13269,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-037</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57276" pluginName="MS11-090: Cumulative Security Update of ActiveX Kill Bits (2618451)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57276" pluginName="MS11-090: Cumulative Security Update of ActiveX Kill Bits (2618451)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45645</bid>
 <bid>45631</bid>
 <bid>51011</bid>
@@ -13328,7 +13328,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57473" pluginName="MS12-005: Vulnerability in Microsoft Windows Could Allow Remote Code Execution (2584146)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57473" pluginName="MS12-005: Vulnerability in Microsoft Windows Could Allow Remote Code Execution (2584146)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>51284</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -13372,7 +13372,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-005</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40435" pluginName="MS09-035: Vulnerabilities in Visual Studio Active Template Library Could Allow Remote Code Execution (969706)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="40435" pluginName="MS09-035: Vulnerabilities in Visual Studio Active Template Library Could Allow Remote Code Execution (969706)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35828</bid>
 <bid>35830</bid>
 <bid>35832</bid>
@@ -13427,7 +13427,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-035</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="35822" pluginName="MS09-006: Vulnerabilities in Windows Kernel Could Allow Remote Code Execution (958690)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="35822" pluginName="MS09-006: Vulnerabilities in Windows Kernel Could Allow Remote Code Execution (958690)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>34012</bid>
 <bid>34025</bid>
 <bid>34027</bid>
@@ -13478,7 +13478,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms09-006</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56174" pluginName="MS11-071: Vulnerability in Windows Components Could Allow Remote Code Execution (2570947)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="56174" pluginName="MS11-071: Vulnerability in Windows Components Could Allow Remote Code Execution (2570947)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47741</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1991</cve>
@@ -13510,7 +13510,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-071</solution>
 <xref>OSVDB:75382</xref>
 <xref>MSFT:MS11-071</xref>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="36149" pluginName="MS09-011: Vulnerability in Microsoft DirectShow Could Allow Remote Code Execution (961373)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="36149" pluginName="MS09-011: Vulnerability in Microsoft DirectShow Could Allow Remote Code Execution (961373)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>34460</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-0084</cve>
@@ -13544,7 +13544,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-011</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57278" pluginName="MS11-092: Vulnerability in Windows Media Could Allow Remote Code Execution (2648048)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57278" pluginName="MS11-092: Vulnerability in Windows Media Could Allow Remote Code Execution (2648048)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>50957</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-3401</cve>
@@ -13585,7 +13585,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-092</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55793" pluginName="MS11-063: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2567680)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="55793" pluginName="MS11-063: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2567680)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48992</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1967</cve>
@@ -13622,7 +13622,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-063</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="59910" pluginName="MS12-047: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2718523)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="59910" pluginName="MS12-047: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2718523)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>54285</bid>
 <bid>54302</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -13670,7 +13670,7 @@ this security release, you must install this update with KB2686509
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57948" pluginName="MS12-014: Vulnerability in Indeo Codec Could Allow Remote Code Execution (2661637)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="57948" pluginName="MS12-014: Vulnerability in Indeo Codec Could Allow Remote Code Execution (2661637)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42730</bid>
 <cpe>cpe:/o:microsoft:windows_xp</cpe>
 <cve>CVE-2010-3138</cve>
@@ -13720,7 +13720,7 @@ This indicates KB2661637 is missing.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="52585" pluginName="MS11-017: Vulnerabilities in Remote Desktop Connection Could Allow Remote Code Execution (2508062)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="52585" pluginName="MS11-017: Vulnerabilities in Remote Desktop Connection Could Allow Remote Code Execution (2508062)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46678</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0029</cve>
@@ -13760,7 +13760,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-017</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="58657" pluginName="MS12-025: Vulnerability in .NET Framework Could Allow Remote Code Execution (2671605)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="440" svc_name="cifs" protocol="tcp" severity="3" pluginID="58657" pluginName="MS12-025: Vulnerability in .NET Framework Could Allow Remote Code Execution (2671605)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>52921</bid>
 <bid>53204</bid>
 <cpe>cpe:/o:microsoft:windows
@@ -13804,7 +13804,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms12-025</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40888" pluginName="MS09-045: Vulnerability in JScript Scripting Engine Could Allow Remote Code Execution (971961)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="441" svc_name="cifs" protocol="tcp" severity="3" pluginID="40888" pluginName="MS09-045: Vulnerability in JScript Scripting Engine Could Allow Remote Code Execution (971961)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36224</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-1920</cve>
@@ -13844,7 +13844,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-045</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55123" pluginName="MS11-043: Vulnerability in SMB Client Could Allow Remote Code Execution (2536276)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="380" svc_name="cifs" protocol="tcp" severity="3" pluginID="55123" pluginName="MS11-043: Vulnerability in SMB Client Could Allow Remote Code Execution (2536276)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48184</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1268</cve>
@@ -13881,7 +13881,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-043</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="44416" pluginName="MS10-006: Vulnerabilities in SMB Client Could Allow Remote Code Execution (978251)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="44416" pluginName="MS10-006: Vulnerabilities in SMB Client Could Allow Remote Code Execution (978251)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38093</bid>
 <bid>38100</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -13930,7 +13930,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-006</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="46840" pluginName="MS10-033: Vulnerabilities in Media Decompression Could Allow Remote Code Execution (979902)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="46840" pluginName="MS10-033: Vulnerabilities in Media Decompression Could Allow Remote Code Execution (979902)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>40432</bid>
 <bid>40464</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -13977,7 +13977,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-033</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51907" pluginName="MS11-007: Vulnerability in the OpenType Compact Font Format (CFF) Driver Could Allow Remote Code Execution (2485376)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51907" pluginName="MS11-007: Vulnerability in the OpenType Compact Font Format (CFF) Driver Could Allow Remote Code Execution (2485376)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46106</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0033</cve>
@@ -14013,7 +14013,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-007</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51171" pluginName="MS10-099: Vulnerability in Routing and Remote Access Could Allow Elevation of Privilege (2440591)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51171" pluginName="MS10-099: Vulnerability in Routing and Remote Access Could Allow Elevation of Privilege (2440591)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45269</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3963</cve>
@@ -14052,7 +14052,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-099</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="34743" pluginName="MS08-068: Vulnerability in SMB Could Allow Remote Code Execution (957097)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="34743" pluginName="MS08-068: Vulnerability in SMB Could Allow Remote Code Execution (957097)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>7385</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-4037</cve>
@@ -14091,7 +14091,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-068</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53375" pluginName="MS11-018: Cumulative Security Update for Internet Explorer (2497640)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="53375" pluginName="MS11-018: Cumulative Security Update for Internet Explorer (2497640)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45639</bid>
 <bid>46821</bid>
 <bid>47190</bid>
@@ -14145,7 +14145,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-018</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="62045" pluginName="MS 2736233: Update Rollup for ActiveX Kill Bits (2736233)" pluginFamily="Windows">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="62045" pluginName="MS 2736233: Update Rollup for ActiveX Kill Bits (2736233)" pluginFamily="Windows">
 <bid>54107</bid>
 <bid>54108</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -14195,7 +14195,7 @@ when this scan was run.
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55792" pluginName="MS11-062: Vulnerability in Remote Access Service NDISTAPI Driver Could Allow Elevation of Privilege (2566454)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="55792" pluginName="MS11-062: Vulnerability in Remote Access Service NDISTAPI Driver Could Allow Elevation of Privilege (2566454)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48996</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-1974</cve>
@@ -14232,7 +14232,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-062</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="45508" pluginName="MS10-021: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (979683)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="2" pluginID="45508" pluginName="MS10-021: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (979683)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>39297</bid>
 <bid>39309</bid>
 <bid>39318</bid>
@@ -14311,7 +14311,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-021</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="40557" pluginName="MS09-038: Vulnerabilities in Windows Media File Processing Could Allow Remote Code Execution (971557)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="40557" pluginName="MS09-038: Vulnerabilities in Windows Media File Processing Could Allow Remote Code Execution (971557)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35967</bid>
 <bid>35970</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -14353,7 +14353,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-038</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="39348" pluginName="MS09-026: Vulnerability in RPC Could Allow Elevation of Privilege (970238)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="4" pluginID="39348" pluginName="MS09-026: Vulnerability in RPC Could Allow Elevation of Privilege (970238)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>35219</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2009-0568</cve>
@@ -14387,7 +14387,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-026</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51169" pluginName="MS10-097: Insecure Library Loading in Internet Connection Signup Wizard Could Allow Remote Code Execution (2443105)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="51169" pluginName="MS10-097: Insecure Library Loading in Internet Connection Signup Wizard Could Allow Remote Code Execution (2443105)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42713</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3144</cve>
@@ -14426,7 +14426,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-097</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48289" pluginName="MS10-052: Vulnerability in Microsoft MPEG Layer-3 Codecs Could Allow Remote Code Execution (2115168)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="854" svc_name="cifs" protocol="tcp" severity="3" pluginID="48289" pluginName="MS10-052: Vulnerability in Microsoft MPEG Layer-3 Codecs Could Allow Remote Code Execution (2115168)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42298</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-1882</cve>
@@ -14465,7 +14465,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-052</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49958" pluginName="MS10-081: Vulnerability in Windows Common Control Library Could Allow Remote Code Execution (2296011)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="49958" pluginName="MS10-081: Vulnerability in Windows Common Control Library Could Allow Remote Code Execution (2296011)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43717</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-2746</cve>
@@ -14506,7 +14506,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-081</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="56454" pluginName="MS11-080: Vulnerability in Ancillary Function Driver Could Allow Elevation of Privilege (2592799)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="56454" pluginName="MS11-080: Vulnerability in Ancillary Function Driver Could Allow Elevation of Privilege (2592799)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>49941</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -14547,7 +14547,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-080</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="33132" pluginName="MS08-030: Vulnerability in Bluetooth Stack Could Allow Remote Code Execution (951376)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="33132" pluginName="MS08-030: Vulnerability in Bluetooth Stack Could Allow Remote Code Execution (951376)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>29522</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2008-1453</cve>
@@ -14584,7 +14584,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms08-030</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57279" pluginName="MS11-093: Vulnerability in OLE Could Allow Remote Code Execution (2624667)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="57279" pluginName="MS11-093: Vulnerability in OLE Could Allow Remote Code Execution (2624667)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>50977</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-3400</cve>
@@ -14627,7 +14627,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-093</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55570" pluginName="MS11-054: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2555917)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="55570" pluginName="MS11-054: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2555917)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48587</bid>
 <bid>48589</bid>
 <bid>48590</bid>
@@ -14720,7 +14720,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-054</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49219" pluginName="MS10-061: Vulnerability in Print Spooler Service Could Allow Remote Code Execution (2347290)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="49219" pluginName="MS10-061: Vulnerability in Print Spooler Service Could Allow Remote Code Execution (2347290)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43073</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -14764,7 +14764,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-061</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57283" pluginName="MS11-097: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2620712)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="57283" pluginName="MS11-097: Vulnerability in Windows Client/Server Run-time Subsystem Could Allow Elevation of Privilege (2620712)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>50972</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-3408</cve>
@@ -14801,7 +14801,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-097</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="45378" pluginName="MS10-018: Cumulative Security Update for Internet Explorer (980182)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="45378" pluginName="MS10-018: Cumulative Security Update for Internet Explorer (980182)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>38615</bid>
 <bid>39023</bid>
 <bid>39024</bid>
@@ -14878,7 +14878,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-018</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="48287" pluginName="MS10-050: Vulnerability in Windows Movie Maker Could Allow Remote Code Execution (981997)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="48287" pluginName="MS10-050: Vulnerability in Windows Movie Maker Could Allow Remote Code Execution (981997)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>42268</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-2564</cve>
@@ -14915,7 +14915,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-050</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57284" pluginName="MS11-098: Vulnerability in Windows Kernel Could Allow Elevation of Privilege (2633171)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="57284" pluginName="MS11-098: Vulnerability in Windows Kernel Could Allow Elevation of Privilege (2633171)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>50969</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -14954,7 +14954,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-098</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="53387" pluginName="MS11-030: Vulnerability in DNS Resolution Could Allow Remote Code Execution (2509553)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="53387" pluginName="MS11-030: Vulnerability in DNS Resolution Could Allow Remote Code Execution (2509553)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>47242</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2011-0657</cve>
@@ -14994,7 +14994,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-030</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49951" pluginName="MS10-074: Vulnerability in Microsoft Foundation Classes Could Allow Remote Code Execution (2387149)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="49951" pluginName="MS10-074: Vulnerability in Microsoft Foundation Classes Could Allow Remote Code Execution (2387149)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>41333</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-3227</cve>
@@ -15035,7 +15035,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-074</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="57285" pluginName="MS11-099: Cumulative Security Update for Internet Explorer (2618444)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="57285" pluginName="MS11-099: Cumulative Security Update for Internet Explorer (2618444)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>50974</bid>
 <bid>50975</bid>
 <bid>50976</bid>
@@ -15080,7 +15080,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-099</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="55122" pluginName="MS11-042: Vulnerabilities in Distributed File System Could Allow Remote Code Execution (2535512)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="55122" pluginName="MS11-042: Vulnerabilities in Distributed File System Could Allow Remote Code Execution (2535512)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>48180</bid>
 <bid>48187</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -15126,7 +15126,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-042</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51455" pluginName="MS11-002: Vulnerabilities in Microsoft Data Access Components Could Allow Remote Code Execution (2451910)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="51455" pluginName="MS11-002: Vulnerabilities in Microsoft Data Access Components Could Allow Remote Code Execution (2451910)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>45695</bid>
 <bid>45698</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -15173,7 +15173,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-002</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="45513" pluginName="MS10-026: Vulnerability in Microsoft MPEG Layer-3 Codecs Could Allow Remote Code Execution (977816)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="45513" pluginName="MS10-026: Vulnerability in Microsoft MPEG Layer-3 Codecs Could Allow Remote Code Execution (977816)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>39303</bid>
 <canvas_package>CANVAS</canvas_package>
 <cpe>cpe:/o:microsoft:windows</cpe>
@@ -15217,7 +15217,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-026</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="44418" pluginName="MS10-008: Cumulative Security Update of ActiveX Kill Bits (978262)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="44418" pluginName="MS10-008: Cumulative Security Update of ActiveX Kill Bits (978262)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>34766</bid>
 <bid>38045</bid>
 <bid>38060</bid>
@@ -15268,7 +15268,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-008</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="42439" pluginName="MS09-065: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (969947)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="42439" pluginName="MS09-065: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Remote Code Execution (969947)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>36029</bid>
 <bid>36939</bid>
 <bid>36941</bid>
@@ -15321,7 +15321,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-065</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="36152" pluginName="MS09-014: Cumulative Security Update for Internet Explorer (963027)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="36152" pluginName="MS09-014: Cumulative Security Update for Internet Explorer (963027)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>29445</bid>
 <bid>34423</bid>
 <bid>34424</bid>
@@ -15375,7 +15375,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS09-014</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="45516" pluginName="MS10-029: Vulnerability in Windows ISATAP Component Could Allow Spoofing (978338)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="45516" pluginName="MS10-029: Vulnerability in Windows ISATAP Component Could Allow Spoofing (978338)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>39352</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-0812</cve>
@@ -15414,7 +15414,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-029</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="44425" pluginName="MS10-015: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (977165)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="44425" pluginName="MS10-015: Vulnerabilities in Windows Kernel Could Allow Elevation of Privilege (977165)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>37864</bid>
 <bid>38044</bid>
 <canvas_package>CANVAS</canvas_package>
@@ -15463,7 +15463,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-015</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="51912" pluginName="MS11-012: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2479628)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="51912" pluginName="MS11-012: Vulnerabilities in Windows Kernel-Mode Drivers Could Allow Elevation of Privilege (2479628)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>46141</bid>
 <bid>46147</bid>
 <bid>46148</bid>
@@ -15528,7 +15528,7 @@ http://technet.microsoft.com/en-us/security/bulletin/ms11-012</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="33874" pluginName="MS08-045: Cumulative Security Update for Internet Explorer (953838)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="33874" pluginName="MS08-045: Cumulative Security Update for Internet Explorer (953838)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>28295</bid>
 <bid>30610</bid>
 <bid>30611</bid>
@@ -15584,7 +15584,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS08-045</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="3" pluginID="49224" pluginName="MS10-066: Vulnerability in Remote Procedure Call Could Allow Remote Code Execution (982802)" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="3" pluginID="49224" pluginName="MS10-066: Vulnerability in Remote Procedure Call Could Allow Remote Code Execution (982802)" pluginFamily="Windows : Microsoft Bulletins">
 <bid>43119</bid>
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cve>CVE-2010-2567</cve>
@@ -15620,7 +15620,7 @@ http://technet.microsoft.com/en-us/security/bulletin/MS10-066</solution>
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="57033" pluginName="Microsoft Patch Bulletin Feasibility Check" pluginFamily="Windows : Microsoft Bulletins">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="57033" pluginName="Microsoft Patch Bulletin Feasibility Check" pluginFamily="Windows : Microsoft Bulletins">
 <description>Using credentials supplied in the scan policy, Nessus is able to collect information about the software and patches installed on the remote Windows host and will use that information to check for missing Microsoft security updates.
 
 Note that this plugin is purely informational.</description>
@@ -15668,7 +15668,7 @@ Method : SMB
 
 The remote host is running Microsoft Windows XP Professional (English)</plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="1" pluginID="11460" pluginName="Microsoft Windows SMB Registry : Classic Logon Screen" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="1" pluginID="11460" pluginName="Microsoft Windows SMB Registry : Classic Logon Screen" pluginFamily="Windows">
 <cvss_base_score>1.2</cvss_base_score>
 <cvss_vector>CVSS2#AV:L/AC:H/Au:N/C:P/I:N/A:N</cvss_vector>
 <description>The registry key HKLM\Software\Microsoft\Windows NT\CurrentVersion\WinLogon\LogonType does not exist or is set to 1.
@@ -15697,7 +15697,7 @@ It means that users who attempt to log in locally will see get the &apos;new&apo
   Hostname : SIMON-EBB764A8F
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="11119" pluginName="Microsoft Windows SMB Registry : XP Service Pack Detection" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="11119" pluginName="Microsoft Windows SMB Registry : XP Service Pack Detection" pluginFamily="Windows">
 <bid>10897</bid>
 <bid>11202</bid>
 <cve>CVE-1999-0662</cve>
@@ -15772,7 +15772,7 @@ Since it is physically accessible through the network, ensure that its configura
 <solution>n/a</solution>
 <synopsis>The remote host seems to be a VMware virtual machine.</synopsis>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
 <cpe>cpe:/o:microsoft:windows</cpe>
 <cvss_base_score>5.0</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:L/Au:N/C:N/I:P/A:N</cvss_vector>
@@ -15850,7 +15850,7 @@ The remote clock is synchronized with the local clock.
 192.168.0.11
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="44401" pluginName="Microsoft Windows SMB Service Config Enumeration" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="44401" pluginName="Microsoft Windows SMB Service Config Enumeration" pluginFamily="Windows">
 <description>This plugin implements the QueryServiceConfig() calls to obtain, using the SMB protocol, the launch parameters of each active service on the remote host (executable path, log on type, etc).</description>
 <fname>smb_enum_services_params.nasl</fname>
 <plugin_modification_date>2011/03/04</plugin_modification_date>
@@ -16511,7 +16511,7 @@ The following services are disabled :
     Dependencies : RPCSS/TCPIP/NTLMSSP/
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="1" pluginID="10456" pluginName="Microsoft Windows SMB Service Enumeration" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="1" pluginID="10456" pluginName="Microsoft Windows SMB Service Enumeration" pluginFamily="Windows">
 <cvss_base_score>2.6</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:H/Au:N/C:P/I:N/A:N</cvss_vector>
 <description>This plugin implements the SvcOpenSCManager() and SvcEnumServices() calls to obtain, using the SMB protocol, the list of active and inactive services of the remote host.
@@ -16646,7 +16646,7 @@ The following user is a member of the &apos;Administrators&apos; group :
   - SIMON-EBB764A8F\Administrator (User)
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="4" pluginID="35362" pluginName="MS09-001: Microsoft Windows SMB Vulnerabilities Remote Code Execution (958687) (uncredentialed check)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="4" pluginID="35362" pluginName="MS09-001: Microsoft Windows SMB Vulnerabilities Remote Code Execution (958687) (uncredentialed check)" pluginFamily="Windows">
 <bid>31179</bid>
 <bid>33121</bid>
 <bid>33122</bid>
@@ -16677,7 +16677,7 @@ http://www.microsoft.com/technet/security/bulletin/ms09-001.mspx</solution>
 <xref>OSVDB:52692</xref>
 <xref>MSFT:MS09-001</xref>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="17651" pluginName="Microsoft Windows SMB : Obtains the Password Policy" pluginFamily="Windows : User management">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="17651" pluginName="Microsoft Windows SMB : Obtains the Password Policy" pluginFamily="Windows : User management">
 <description>Using the supplied credentials it was possible to extract the password policy for the remote Windows host.  The password policy must conform to the Informational System Policy.</description>
 <fname>smb_password_policy.nasl</fname>
 <plugin_modification_date>2011/03/04</plugin_modification_date>
@@ -16700,7 +16700,7 @@ Time between failed logon (s): 1800
 Number of invalid logon before locked out (s): 0
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="26920" pluginName="Microsoft Windows SMB NULL Session Authentication" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="2" pluginID="26920" pluginName="Microsoft Windows SMB NULL Session Authentication" pluginFamily="Windows">
 <bid>494</bid>
 <cve>CVE-1999-0519</cve>
 <cve>CVE-1999-0520</cve>
@@ -16741,7 +16741,7 @@ Reboot once the registry changes are complete.</solution>
 <xref>OSVDB:8230</xref>
 <plugin_output>It was possible to bind to the \browser pipe</plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="1" pluginID="11457" pluginName="Microsoft Windows SMB Registry : Winlogon Cached Password Weakness" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="1" pluginID="11457" pluginName="Microsoft Windows SMB Registry : Winlogon Cached Password Weakness" pluginFamily="Windows">
 <cvss_base_score>2.6</cvss_base_score>
 <cvss_vector>CVSS2#AV:N/AC:H/Au:N/C:P/I:N/A:N</cvss_vector>
 <description>The registry key HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount is non-null. It means that the remote host locally caches the passwords of the users when they log in, in order to continue to allow the users to log in in the case of the failure of the PDC.</description>
@@ -16754,7 +16754,7 @@ Reboot once the registry changes are complete.</solution>
 <solution>use regedt32 and set the value of this key to 0</solution>
 <synopsis>User credentials are stored in memory.</synopsis>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="10395" pluginName="Microsoft Windows SMB Shares Enumeration" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="10395" pluginName="Microsoft Windows SMB Shares Enumeration" pluginFamily="Windows">
 <description>By connecting to the remote host, Nessus was able to enumerate the network share names.</description>
 <fname>smb_enum_shares.nasl</fname>
 <plugin_modification_date>2012/07/09</plugin_modification_date>
@@ -16773,7 +16773,7 @@ Here are the SMB shares available on the remote host when logged as administrato
   - C$
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="10400" pluginName="Microsoft Windows SMB Registry Remotely Accessible" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="10400" pluginName="Microsoft Windows SMB Registry Remotely Accessible" pluginFamily="Windows">
 <description>It was possible to access the remote Windows Registry using the login / password combination used for the Windows local checks (SMB tests).</description>
 <fname>smb_registry_access.nasl</fname>
 <plugin_modification_date>2011/06/28</plugin_modification_date>
@@ -16880,7 +16880,7 @@ and so on, please run the scan with &apos;Report Verbosity&apos; set to &apos;ve
 
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="34252" pluginName="Microsoft Windows Remote Listeners Enumeration (WMI)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="34252" pluginName="Microsoft Windows Remote Listeners Enumeration (WMI)" pluginFamily="Windows">
 <description>This script uses WMI to list the processes running on the remote host and listening on TCP / UDP ports.</description>
 <fname>wmi_process_on_port.nbin</fname>
 <plugin_modification_date>2011/04/04</plugin_modification_date>
@@ -17027,7 +17027,7 @@ WebClient (WebClient)
 <plugin_output>
 The Win32 process &apos;System&apos; is listening on this port (pid 4).</plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="microsoft-ds?" protocol="udp" severity="0" pluginID="34252" pluginName="Microsoft Windows Remote Listeners Enumeration (WMI)" pluginFamily="Windows">
+<ReportItem port="894" svc_name="microsoft-ds?" protocol="udp" severity="0" pluginID="34252" pluginName="Microsoft Windows Remote Listeners Enumeration (WMI)" pluginFamily="Windows">
 <description>This script uses WMI to list the processes running on the remote host and listening on TCP / UDP ports.</description>
 <fname>wmi_process_on_port.nbin</fname>
 <plugin_modification_date>2011/04/04</plugin_modification_date>
@@ -17331,7 +17331,7 @@ Active Connections
 <synopsis>The list of open ports could be retrieved by netstat.</synopsis>
 <plugin_output>Port 500/udp was found to be open</plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="microsoft-ds?" protocol="udp" severity="0" pluginID="34220" pluginName="Netstat Portscanner (WMI)" pluginFamily="Port scanners">
+<ReportItem port="894" svc_name="microsoft-ds?" protocol="udp" severity="0" pluginID="34220" pluginName="Netstat Portscanner (WMI)" pluginFamily="Port scanners">
 <description>Using the WMI interface, it is possible to get the open ports by running the netstat command remotely.</description>
 <fname>wmi_netstat.nbin</fname>
 <plugin_modification_date>2011/08/17</plugin_modification_date>
@@ -17367,7 +17367,7 @@ Active Connections
 <synopsis>The list of open ports could be retrieved by netstat.</synopsis>
 <plugin_output>Port 1273/tcp was found to be open</plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="34220" pluginName="Netstat Portscanner (WMI)" pluginFamily="Port scanners">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="34220" pluginName="Netstat Portscanner (WMI)" pluginFamily="Port scanners">
 <description>Using the WMI interface, it is possible to get the open ports by running the netstat command remotely.</description>
 <fname>wmi_netstat.nbin</fname>
 <plugin_modification_date>2011/08/17</plugin_modification_date>
@@ -17405,7 +17405,7 @@ These requests can be used to gather information about the remote host such as i
 <solution>n/a</solution>
 <synopsis>WMI queries can be made against the remote host.</synopsis>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="10394" pluginName="Microsoft Windows SMB Log In Possible" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="10394" pluginName="Microsoft Windows SMB Log In Possible" pluginFamily="Windows">
 <description>The remote host is running Microsoft Windows operating system or Samba, a CIFS/SMB server for Unix.  It was possible to log into it using one of the following accounts :
 
 - NULL session
@@ -17430,7 +17430,7 @@ http://support.microsoft.com/support/kb/articles/Q246/2/61.ASP</see_also>
 - The SMB tests will be done as &apos;administrator&apos;/&apos;******&apos;
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="10785" pluginName="Microsoft Windows SMB NativeLanManager Remote System Information Disclosure" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="10785" pluginName="Microsoft Windows SMB NativeLanManager Remote System Information Disclosure" pluginFamily="Windows">
 <description>It is possible to get the remote operating system name and version (Windows and/or Samba) by sending an authentication request to port 139 or 445.</description>
 <fname>smb_nativelanman.nasl</fname>
 <plugin_modification_date>2011/03/17</plugin_modification_date>
@@ -17481,7 +17481,7 @@ The remote host has the following MAC address on its adapter :
 An SMB server is running on this port.
 </plugin_output>
 </ReportItem>
-<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="0" pluginID="11011" pluginName="Microsoft Windows SMB Service Detection" pluginFamily="Windows">
+<ReportItem port="894" svc_name="cifs" protocol="tcp" severity="0" pluginID="11011" pluginName="Microsoft Windows SMB Service Detection" pluginFamily="Windows">
 <description>The remote service understands the CIFS (Common Internet File System) or Server Message Block (SMB) protocol, used to provide shared access to files, printers, etc between nodes on a network.</description>
 <fname>cifs445.nasl</fname>
 <plugin_modification_date>2012/01/31</plugin_modification_date>
