@@ -106,11 +106,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // production, run when grunt is run with no arguments
   grunt.registerTask('default', ['jshint', 'cssmin', 'uglify', 'copy']);
   // development - dont minify js
-  grunt.registerTask('dev', 'jshint cssmin concat copy');
+  grunt.registerTask('dev', ['jshint', 'cssmin', 'concat', 'copy']);
 
   grunt.registerTask('lint', 'jshint');
 };
