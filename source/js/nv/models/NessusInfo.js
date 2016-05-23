@@ -31,6 +31,7 @@ var NessusInfo = Backbone.Model.extend({
       this.set('data', vulnInfo);
     } else {
       console.log('vulnerability missing: ' + vulnid);
+      this.set('vulnerability missing');
     }
 
   }
