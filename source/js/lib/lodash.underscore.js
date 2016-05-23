@@ -485,17 +485,17 @@
     if (!collection) return result;
     callback = callback && typeof thisArg == 'undefined' ? callback : createCallback(callback, thisArg);
     var length = iteratee.length; index = -1;
-    if (typeof length == 'number') {  
+    if (typeof length == 'number') {
       while (++index < length) {
         if (callback(iteratee[index], index, collection) === indicatorObject) return result
       }
     }
-    else {  
+    else {
       for (index in iteratee) {
-        if (hasOwnProperty.call(iteratee, index)) {    
-        if (callback(iteratee[index], index, collection) === indicatorObject) return result;    
+        if (hasOwnProperty.call(iteratee, index)) {
+        if (callback(iteratee[index], index, collection) === indicatorObject) return result;
         }
-      }    
+      }
     }
   };
 
@@ -675,10 +675,10 @@
     var index, iteratee = collection, result = collection;
     if (!collection) return result;
     callback || (callback = identity);
-    
+
       for (index in iteratee) {
-        if (callback(iteratee[index], index, collection) === indicatorObject) return result;    
-      }    
+        if (callback(iteratee[index], index, collection) === indicatorObject) return result;
+      }
     return result
   };
 
@@ -706,12 +706,12 @@
     var index, iteratee = collection, result = collection;
     if (!collection) return result;
     callback || (callback = identity);
-    
+
       for (index in iteratee) {
-        if (hasOwnProperty.call(iteratee, index)) {    
-        if (callback(iteratee[index], index, collection) === indicatorObject) return result;    
+        if (hasOwnProperty.call(iteratee, index)) {
+        if (callback(iteratee[index], index, collection) === indicatorObject) return result;
         }
-      }    
+      }
     return result
   };
 
