@@ -24,15 +24,30 @@ var NessusInfo = Backbone.Model.extend({
   },
 
   updateData: function(vulnid){
-
-    if( vulnid in this.get('vulnIdInfo') ) {
-      var vulnInfo = this.get('vulnIdInfo')[vulnid];
-      vulnInfo.vulnid = vulnid;
-      this.set('data', vulnInfo);
-    } else {
-      console.log('vulnerability missing: ' + vulnid);
-      this.set('vulnerability missing');
-    }
-
+    var e = null;
+    eventList.forEach(function(event) {
+      if (event.vulnid == vulnid) {
+        e = event;
+      }
+    });
+    var vulnInfo = {
+      "bugtraqList": [
+        "<a href='http://securityfocus.com/bid/'></a>"
+      ],
+      "cveList": [
+        "<a href='http://cgi.nessus.org/cve.php3?cve='></a>"
+      ],
+      "description": e.description,
+      "family": e.family,
+      "otherInfoList": [
+        "Risk factor : " + e.risk_factor + " / CVSS Base Score : " + e.cvss
+      ],
+      "solution": e.solution,
+      "synopsis": e.synopsis,
+      "title": e.title,
+      "updateInfo": ""
+    };
+    vulnInfo.vulnid = vulnid;
+    this.set('data', vulnInfo);
   }
 });
