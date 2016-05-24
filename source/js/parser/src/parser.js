@@ -18060,7 +18060,13 @@ var parseNessusResult = function(nessStr, name){
   "cvss": nessStr.childNamed('cvss_base_score') != null ?
     nessStr.childNamed('cvss_base_score').val : '',
   "value": 1,
-  "port": nessStr.attr.port};
+  "port": nessStr.attr.port,
+  "title": nessStr.childNamed('plugin_name') != null ? nessStr.childNamed('plugin_name').val :'',
+  "description": nessStr.childNamed('description') != null ? nessStr.childNamed('description').val :'',
+  "family": nessStr.attr.pluginFamily,
+  "risk_factor": nessStr.childNamed('risk_factor') != null ? nessStr.childNamed('risk_factor').val :'',
+  "synopsis": nessStr.childNamed('synopsis') != null ? nessStr.childNamed('synopsis').val :'',
+  "solution": nessStr.childNamed('solution') != null ? nessStr.childNamed('solution').val :''};
 }
 
 /**
@@ -18094,6 +18100,7 @@ var isResult = function(line){
     return(line.split("|")[0] === "results")
 }
 
+
 /**
  * @param nbe - a string represen ting the contents of a NBE file.
  * @return - array where each entry is a result from the NBE file.
@@ -18114,7 +18121,8 @@ var parseNBEFile = function(nbe){
         }
       }
     });
-  return returnArray.filter(function(){return true});  //remove nulls
+    var objects = returnArray.filter(function(){return true});  //remove nulls
+    return objects;
 }
 
 module.exports = {
