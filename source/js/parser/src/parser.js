@@ -18051,7 +18051,7 @@ var XmlDocument = require('xmldoc').XmlDocument;
  */
 var parseNessusResult = function(nessStr, name){
   //id = nessStr.attr.severity;
-  var scoreCode = ['Open Port', 'Low', 'Warning', 'High', 'Hole'];
+  var scoreCode = ['Note', 'Warning', 'Hole'];
 
   return {
   "ip": name,
