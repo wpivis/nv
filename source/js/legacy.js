@@ -357,26 +357,131 @@ var handleFileSelect = function (element) {
     return (i < 0) ? '' : filename.substr(i);
   }
 
+  var isResult2 = function(line){
+    return(line.split("|")[0] === "results");
+  };
+
+  var parseNessusResult2 = function(nessStr){
+    var scoreReg2 = /CVSS Base Score : (\d+\.\d+)/;
+
+    nessStr = nessStr.replace(/\=/g, "&#61;");
+    nessStr = nessStr.replace(/\>/g, "&gt;");
+    nessStr = nessStr.replace(/\</g, "&lt;");
+    nessStr = nessStr.replace(/\&/g, "&amp;");
+
+    var portReg2 = /\D+ \((\d{1,7})\D+\)/;
+    var splitNess = nessStr.split("|");
+    var ip2 = splitNess[2];
+    var code2 = parseFloat(splitNess[4]);
+    var holeNote2 = splitNess[5];
+
+    var info2 = splitNess[6].split('Synopsis :');
+    var synopsis2 = info2[1].split('Description :');
+    var description2 = synopsis2[1].split('Solution :');
+    var solution2 = description2[1].split('Risk factor :');
+    var risk_factor2 = solution2[1].split('CVSS Base Score :');
+    if(solution2[1].split('CVSS Base Score :').length == 1) {
+      risk_factor2 = solution2[1].split('Plugin output :');
+      risk_factor2 = risk_factor2[0].substring(4, risk_factor2[0].length).split('\\n')[0];
+    } else {
+      risk_factor2 = risk_factor2[0].substring(4, risk_factor2[0].length).split(' /')[0];
+    }
+    if(scoreReg2.test(nessStr)){
+      var score2 = parseFloat(scoreReg2.exec(nessStr)[1]);
+    }
+    else{
+      var score2 = 1.0;
+    }
+    if(portReg2.test(nessStr)){
+      var port2 = parseFloat(portReg2.exec(nessStr)[1]);
+    }
+    else{
+      var port2 = 'notes';
+    }
+
+    return {"ip": (ip2 === undefined ? "" : ip2),
+      "vulnid": (isNaN(code2) ? 0 : code2),
+      "vulntype":(holeNote2 === undefined ? "" : holeNote2.indexOf('Note') !== -1 ? 'note' : 'hole'),
+      "cvss": score2,
+      "value": 1,
+      "port":port2,
+      "synopsis": synopsis2[0].substring(4, synopsis2[0].length - 4),
+      "description": description2[0].substring(4, description2[0].length - 4),
+      "solution": solution2[0].substring(4, solution2[0].length - 4),
+      "title": "title",
+      "risk_factor": risk_factor2,
+      "severity": holeNote2.substring(9, holeNote2.length).toLowerCase(),
+      "family": "nofamily"};
+  };
+
+  function create_nessus2(reports2) {
+    var ip = '0';
+    var string_report = '<NessusClientData_v2>';
+    reports2.forEach(function(report) {
+      if (ip == '0' || ip != report.ip) {
+        if (ip != '0') {
+          string_report += '</ReportHost><ReportHost name="'+ report.ip + '">';
+        } else{
+          string_report += '<Report><ReportHost name="'+ report.ip + '">';
+          ip = report.ip;
+        }
+      }
+      string_report += '<ReportItem';
+      string_report += (report.port) ? ' port="' + report.port + '"':'';
+      string_report += (report.vulnid) ? ' pluginID="' + report.vulnid + '"':'';
+      string_report += '>';
+      string_report += (report.cvss) ? '<cvss_base_score>' + report.cvss + '</cvss_base_score>':'';
+      string_report += (report.synopsis) ? '<synopsis>' + report.synopsis + '</synopsis>':'';
+      string_report += (report.description) ? '<description>' + report.description + '</description>':'';
+      string_report += (report.solution) ? '<solution>' + report.solution + '</solution>':'';
+      string_report += (report.risk_factor) ? '<risk_factor>' + report.risk_factor + '</risk_factor>':'';
+      string_report += (report.title) ? '<title>' + report.title + '</title>':'';
+      string_report += '</ReportItem>';
+    });
+    string_report += '</ReportHost></Report></NessusClientData_v2>';
+    return string_report;
+  }
+
+  var parseNBEFile2 = function(nbe){
+    var lines = nbe.split("\n");
+    var currentTime = 0;
+    var returnArray = new Array(2);
+
+    for(var i = 0; i < lines.length; i++){
+      if(isResult2(lines[i])){
+        returnArray.push(parseNessusResult2(lines[i]));
+      }
+    }
+    return returnArray.filter(function(){return true});//removes nulls
+  };
+
   holder.loadFile = function(f) {
     console.log('called loadFile');
 
     var reader = new FileReader();
 
     reader.readAsText(f); //utf-8 encoding is default
-    
-    if(getExtension(f.name) == '.nbe') {
-      alert("V1 File Detected");
-      console.log("V1 File Detected");
-    }
 
     reader.onload = function (event) {
       // if this is the first file, load to nbeText1
       // if not, then any additional files are saved to nbeText2
       if ( nbeText1.trim() === '' ) {
-        nbeText1 = event.target.result;
+        if(getExtension(f.name) == '.nbe') {
+          console.log("V1 File Detected, Converting it to V2");
+          var reports2 = parseNBEFile2(event.target.result);
+          nbeText1 = create_nessus2(reports2);
+        } else{
+          nbeText1 = event.target.result;
+        }
       }
       else {
-        nbeText2 = event.target.result;
+        if(getExtension(f.name) == '.nbe') {
+          console.log("V1 File Detected, Converting it to V2");
+          var reports2 = parseNBEFile2(event.target.result);
+          nbeText2 = create_nessus2(reports2);
+        } else{
+          nbeText2 = event.target.result;
+        }
       }
       console.log('Loaded file: ' + f.name);
 
