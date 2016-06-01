@@ -43,13 +43,14 @@ var NV = new (Backbone.Router.extend({
       // If d3 somehow supports non-numerical histograms, we can remove this
       // and lighten the histogram model considerably.
       var vulnTypeMap = d3.scale.ordinal()
-          .domain(['hole', 'port', 'note'])
-          .range([1,2,3]);
+          //.domain(['hole', 'port', 'note'])
+          .domain(['None', 'Low', 'Medium', 'High', 'Critical'])
+          .range([1,2,3,4,5]);
 
       this.vulnTypeHistogram        =   new Histogram({  
                                         app: this,
                                         datasource: this.nessus, 
-                                        bins: 3, 
+                                        bins: 5,
                                         datamap: vulnTypeMap,
                                         filterOptions: {
                                           attribute: 'vulntype'
@@ -60,8 +61,8 @@ var NV = new (Backbone.Router.extend({
                                         app: this,
                                         model: this.vulnTypeHistogram,
                                         target:'#vulnTypeHistogram',
-                                        barwidth: 20,
-                                        w: 66,
+                                        barwidth: 30,
+                                        w: 150,
                                         h: 165,
                                         title: 'vuln type'
                                     });
@@ -75,7 +76,7 @@ var NV = new (Backbone.Router.extend({
                                      filterOptions: {
                                        attribute: 'vulnid',
                                        filters: [
-                                         { attribute:'vulntype', exact:'note' }
+                                         { attribute:'vulntype', exact:'None' }
                                        ]
                                      }
                                  });
@@ -99,7 +100,7 @@ var NV = new (Backbone.Router.extend({
                                     filterOptions: {
                                       attribute: 'vulnid',
                                       filters: [
-                                        { attribute:'vulntype', exact:'hole' }
+                                        { attribute:'vulntype', exact:'Medium' }
                                       ]
                                     }
                                 });

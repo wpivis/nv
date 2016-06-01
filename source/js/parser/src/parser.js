@@ -18051,12 +18051,13 @@ var XmlDocument = require('xmldoc').XmlDocument;
  */
 var parseNessusResult = function(nessStr, name){
   //id = nessStr.attr.severity;
-  var scoreCode = ['Note', 'Warning', 'Hole'];
+  //var scoreCode = ['Note', 'Warning', 'Hole'];
 
   return {
   "ip": name,
   "vulnid": nessStr.attr.pluginID,
-  "vulntype": scoreCode[nessStr.attr.severity],
+  //"vulntype": scoreCode[nessStr.attr.severity],
+  "vulntype": nessStr.childNamed('risk_factor') != null ? nessStr.childNamed('risk_factor').val :'',
   "cvss": nessStr.childNamed('cvss_base_score') != null ?
     nessStr.childNamed('cvss_base_score').val : '',
   "value": 1,

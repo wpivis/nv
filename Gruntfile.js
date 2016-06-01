@@ -4,31 +4,46 @@
 module.exports = function (grunt) {
 
   'use strict';
+
+  /*
+   Tasks:
+   * lint - uses [jshint](https://github.com/jshint/jshint/)
+   * min - uses [uglify-js](https://github.com/mishoo/UglifyJS)
+   * [mincss](https://github.com/gruntjs/grunt-contrib-mincss)
+   */
+
+
+  // Project configuration.
   grunt.initConfig({
     jshint: {
       files: [
         'source/js/nv/*.js'
-      , 'source/js/nv/models/*.js'
-      , 'source/js/nv/views/*.js'
-      , 'source/js/parser/parser.js'
-      , 'source/js/legacy.js'
+        , 'source/js/nv/models/*.js'
+        , 'source/js/nv/views/*.js'
+        , 'source/js/parser/parser.js'
+        , 'source/js/legacy.js'
       ],
       options: {
-        jshintrc: true,
-        globals: {
-          jQuery: true,
-          console: false
-        }
+        browser: true,
+        laxcomma: true,
+        maxparams: 5,
+        maxdepth: 5,
+        maxstatements: 30,
+        maxcomplexity: 10
+      },
+      globals: {
+        jQuery: true,
+        console: false
       }
     }
     ,
     cssmin: {
       'public/css/style.min.css': [
         'source/css/bootstrap.css'
-      , 'source/css/bootstrap-responsive.css'
-      , 'source/css/font-awesome.css'
-      , 'source/css/tipsy.css'
-      , 'source/css/nv.css'
+        , 'source/css/bootstrap-responsive.css'
+        , 'source/css/font-awesome.css'
+        , 'source/css/tipsy.css'
+        , 'source/css/nv.css'
       ]
     }
     ,
@@ -36,26 +51,26 @@ module.exports = function (grunt) {
       libs: {
         src: [
           'source/js/lib/d3.v2.js'
-        , 'source/js/lib/crossfilter.js'
-        , 'source/js/lib/lodash.underscore.js'
-        , 'source/js/lib/backbone-min.js'
-        , 'source/js/lib/bootstrap.min.js'
-        , 'source/js/lib/jquery-ui-1.9.2.custom.js'
-        , 'source/js/lib/jquery.tipsy.js'
+          , 'source/js/lib/crossfilter.js'
+          , 'source/js/lib/lodash.underscore.js'
+          , 'source/js/lib/backbone-min.js'
+          , 'source/js/lib/bootstrap.min.js'
+          , 'source/js/lib/jquery-ui-1.9.2.custom.js'
+          , 'source/js/lib/jquery.tipsy.js'
         ]
-      , dest: 'public/js/lib.min.js'
+        , dest: 'public/js/lib.min.js'
       }
-    , app: {
+      , app: {
         src: [
           'source/js/nv/main.js'
-        , 'source/js/nv/util.js'
-        , 'source/js/nv/models/*.js'
-        , 'source/js/nv/views/*.js'
-        , 'source/js/nv/router.js'
-        , 'source/js/legacy.js'
-        , 'source/js/parser/src/parser.js'
+          , 'source/js/nv/util.js'
+          , 'source/js/nv/models/*.js'
+          , 'source/js/nv/views/*.js'
+          , 'source/js/nv/router.js'
+          , 'source/js/legacy.js'
+          , 'source/js/parser/src/parser.js'
         ]
-      , dest: 'public/js/app.min.js'
+        , dest: 'public/js/app.min.js'
       }
     }
     ,
@@ -63,26 +78,26 @@ module.exports = function (grunt) {
       libs: {
         src: [
           'source/js/lib/d3.v2.js'
-        , 'source/js/lib/crossfilter.js'
-        , 'source/js/lib/lodash.underscore.js'
-        , 'source/js/lib/backbone-min.js'
-        , 'source/js/lib/bootstrap.min.js'
-        , 'source/js/lib/jquery-ui-1.9.2.custom.js'
-        , 'source/js/lib/jquery.tipsy.js'
+          , 'source/js/lib/crossfilter.js'
+          , 'source/js/lib/lodash.underscore.js'
+          , 'source/js/lib/backbone-min.js'
+          , 'source/js/lib/bootstrap.min.js'
+          , 'source/js/lib/jquery-ui-1.9.2.custom.js'
+          , 'source/js/lib/jquery.tipsy.js'
         ]
-      , dest: 'public/js/lib.min.js'
+        , dest: 'public/js/lib.min.js'
       }
-    , app: {
+      , app: {
         src: [
           'source/js/nv/main.js'
-        , 'source/js/nv/util.js'
-        , 'source/js/nv/models/*.js'
-        , 'source/js/nv/views/*.js'
-        , 'source/js/nv/router.js'
-        , 'source/js/legacy.js'
-        , 'source/js/parser/src/parser.js'
+          , 'source/js/nv/util.js'
+          , 'source/js/nv/models/*.js'
+          , 'source/js/nv/views/*.js'
+          , 'source/js/nv/router.js'
+          , 'source/js/legacy.js'
+          , 'source/js/parser/src/parser.js'
         ]
-      , dest: 'public/js/app.min.js'
+        , dest: 'public/js/app.min.js'
       }
     }
     ,
@@ -111,11 +126,11 @@ module.exports = function (grunt) {
     watch: {
       files: [
         '<config:concat.app.src>'
-      , 'source/index.html'
-      , 'source/css/nv.css'
-      , 'source/css/tipsy.css'
+        , 'source/index.html'
+        , 'source/css/nv.css'
+        , 'source/css/tipsy.css'
       ]
-    , tasks: 'dev'
+      , tasks: 'dev'
     }
   });
 
